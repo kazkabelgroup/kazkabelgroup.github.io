@@ -317,7 +317,19 @@ nav li a{
   font-size: x-large;
 }
 @media screen and (max-width: 976px){
+.modal-cross{
+    margin-top: 8px;
 }
+.modaltheme{
+    margin-top: 8px;
+}
+.modalopacity{
+    margin-top: 8px;
+}
+}
+  .modal-content{
+    font-size: medium;
+  }
 .kazkaname{
   font-size: x-large;
 }
@@ -462,4 +474,90 @@ footer {
 .sidenav-overlay{
   z-index: 0;
 
+}
+.modal-cross{
+  position: absolute;
+  right: 0px;
+  font-size: xx-large;
+  margin-right: 10px;
+     transition: 0.30s;
+  -webkit-transition: 0.30s;
+  -moz-transition: 0.30s;
+  -ms-transition: 0.30s;
+  -o-transition: 0.30s;
+}
+.modalblack{
+  background-color: black;
+  color:white;
+     transition: 0.30s;
+  -webkit-transition: 0.30s;
+  -moz-transition: 0.30s;
+  -ms-transition: 0.30s;
+  -o-transition: 0.30s;
+}
+.modalwhite{
+  background-color: white;
+  color:black;
+     transition: 0.30s;
+  -webkit-transition: 0.30s;
+  -moz-transition: 0.30s;
+  -ms-transition: 0.30s;
+  -o-transition: 0.30s;
+}
+.modaltheme{
+   position: absolute;
+  right: 0px;
+  font-size: xx-large;
+  margin-right: 35px;
+     transition: 0.30s;
+  -webkit-transition: 0.30s;
+  -moz-transition: 0.30s;
+  -ms-transition: 0.30s;
+  -o-transition: 0.30s;
+}
+.modal-close{
+  position: absolute;
+  right: 0px;
+}
+.modalblack .modal-close-but{
+  background-color: black;
+  color:white;
+     transition: 0.30s;
+  -webkit-transition: 0.30s;
+  -moz-transition: 0.30s;
+  -ms-transition: 0.30s;
+  -o-transition: 0.30s;
+}
+.modalwhite .modal-close-but{
+  background-color: white;
+  color:black;
+    transition: 0.30s;
+  -webkit-transition: 0.30s;
+  -moz-transition: 0.30s;
+  -ms-transition: 0.30s;
+  -o-transition: 0.30s;
+}
+.modalyellow{
+  background-color: #d6d48d;
+  color:black;
+     transition: 0.30s;
+  -webkit-transition: 0.30s;
+  -moz-transition: 0.30s;
+  -ms-transition: 0.30s;
+  -o-transition: 0.30s;
+}
+.modal-overlay-darken .modal-overlay{
+  opacity: 0.8;
+  transition:0.3s;
+}
+.modalopacity{
+     position: absolute;
+  right: 0px;
+  font-size: xx-large;
+  margin-right: 60px;
+     transition: 0.30s;
+  -webkit-transition: 0.30s;
+  -moz-transition: 0.30s;
+  -ms-transition: 0.30s;
+  -o-transition: 0.30s;
 }
