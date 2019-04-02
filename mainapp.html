@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
- <meta charset="utf-8">
- <meta name="theme-color" content="#6A5ACD">
- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
- <meta  http-equiv="Cache-Control" content="no-cache">
- <title>Казка.бел</title> 
- <link rel="SHORTCUT ICON" href="icons/favicon.ico" type="image/x-icon">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
- <link rel="stylesheet" href="style.css">
- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#6A5ACD">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <title>Казка.бел</title>
+    <link rel="SHORTCUT ICON" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
     <!--
   ____           _   _     _             
@@ -22,660 +22,661 @@
  |_| \_\___/|___/\__|_|___/_|\__,_| \_/  
                                          
 -->
-<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;background: #663399 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;background-size:41px;}</style>
-<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
-<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script>
-<nav style="background-color: #6A5ACD;" class="nav-fixed">
-  <div class="nav-wrapper">
-    <div class="container">
-      <a href="index.html" class="brand-logo scale-animation">Казка.бел</a>
+    <style type="text/css">
+    #hellopreloader>p {
+        display: none;
+    }
+
+    #hellopreloader_preload {
+        display: block;
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #663399 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;
+        background-size: 41px;
+    }
+    </style>
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
     </div>
-    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-      <li><a href="download.html">Скачать</a></li>
+    <script type="text/javascript">
+    var hellopreloader = document.getElementById("hellopreloader_preload");
+
+    function fadeOutnojquery(el) { el.style.opacity = 1; var interhellopreloader = setInterval(function() { el.style.opacity = el.style.opacity - 0.05; if (el.style.opacity <= 0.05) { clearInterval(interhellopreloader);
+                hellopreloader.style.display = "none"; } }, 16); } window.onload = function() { setTimeout(function() { fadeOutnojquery(hellopreloader); }, 1000); };
+    </script>
+    <nav style="background-color: #6A5ACD;" class="nav-fixed">
+        <div class="nav-wrapper">
+            <div class="container">
+                <a href="index.html" class="brand-logo scale-animation">Казка.бел</a>
+            </div>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="download.html">Скачать</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="download.html">Скачать</a></li>
     </ul>
-  </div>
-</nav>
-<ul class="sidenav" id="mobile-demo">
-  <li><a href="index.html">Главная</a></li>
-  <li><a href="contacts.html">Контакты</a></li>
-  <li><a href="download.html">Скачать</a></li>
-</ul>
-<div class="wrapper">
-  <div class="content">
-    <div style="position:relative; margin-top:150px;">
-      <div  class="center-align">
-        <h3>Выберите категорию</h3>
+    <div class="wrapper">
+        <div class="content">
+            <div style="position:relative; margin-top:150px;">
+                <div class="center-align">
+                    <h3>Выберите категорию</h3>
+                    <a id="kazkibutton" class="waves-effect waves btn-animation black-text btn btn-medium white" href="#kazki" onclick="kazkishow()">Сказки</a>
+                    <a id="padannibutton" class="waves-effect waves btn-animation black-text btn btn-medium white " href="#padanni" onclick="padannishow()">Предания</a>
+                    <a id="legendsbutton" class="waves-effect waves btn-animation black-text btn btn-medium white " href="#legends" onclick="legendsshow()">Легенды</a>
+                </div>
+            </div>
+            <!--Kazki-->
+            <div style="position:relative; margin-top:300px;">
+                <div id="kazki" class="hide">
+                    <h3 class="invisible">Озвученные</h3>
+                    <h3 class="center-align scale-animation">Сказки</h3>
+                    <ul class="collection container audnewpc ">
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Два камяні</p>
+                            <br />
+                            <audio class="audfix" src="sound/dvakam.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/dvakam.mp3" download><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" style="color:purple;" href="#dvakam">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Два маразы</p>
+                            <br />
+                            <audio class="audfix" src="sound/dvamar.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/dvamar.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#dvamar" style="color:purple;">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Жораў i чапля</p>
+                            <br />
+                            <audio class="audfix" src="sound/zhor.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/zhor.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#zhorch" style="color:purple;">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Зайчыкі</p>
+                            <br />
+                            <audio class="audfix" src="sound/zaya.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/zaya.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#zaichiki" style="color:purple;">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Каток - Залаты лабок</p>
+                            <br />
+                            <audio class="audfix" src="sound/katok.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/katok.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#katokzal" style="color:purple;">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Кот, ліса, воўк</p>
+                            <br />
+                            <audio class="audfix" src="sound/kot.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/kot.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8 ">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Курачка рабка</p>
+                            <br />
+                            <audio class="audfix" src="sound/ryaba.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/ryaba.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="$rabka" style="color:purple;">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Ліса і цецярук</p>
+                            <br />
+                            <audio class="audfix" src="sound/lis.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/lis.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#listec" style="color:purple;">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Леў і Воўк</p>
+                            <br />
+                            <audio class="audfix" src="sound/ley.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/ley.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8 ">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Людзей слухай, а свой розум май</p>
+                            <br />
+                            <audio class="audfix" src="sound/slyh.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/slyh.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8 ">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Не кажы гоп, пакуль не пераскочыш</p>
+                            <br />
+                            <audio class="audfix" src="sound/gop.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/gop.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Недалiкатны сын</p>
+                            <br />
+                            <audio class="audfix" src="sound/neds.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/neds.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Паганы пан</p>
+                            <br />
+                            <audio class="audfix" src="sound/pan.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/pan.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Пра што кукуе зязюля</p>
+                            <br />
+                            <audio class="audfix" src="sound/zyaz.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/zyaz.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Прагны багацей</p>
+                            <br />
+                            <audio class="audfix" src="sound/bagat.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/bagat.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Сынок з кулачок</p>
+                            <br />
+                            <audio class="audfix" src="sound/kyl.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/kyl.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Як курачка пеўніка ратавала</p>
+                            <br />
+                            <audio class="audfix" src="sound/pey.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/pey.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Як лянiвая дачка рабіць навучылася</p>
+                            <br />
+                            <audio class="audfix" src="sound/dachk.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/dachk.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Як мужык хітра гуся падзяліў.mp3</p>
+                            <br />
+                            <audio class="audfix" src="sound/myzh.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/myzh.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            </div>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle purple scale-animation">language</i>
+                            <p class="kazkaname">Як пана віншавалі</p>
+                            <br />
+                            <audio class="audfix" src="sound/vinsh.mp3" controls></audio>
+                            <div class="secondary-content">
+                                <a href="sound/vinsh.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--padanni-->
+            <div id="padanni" class="hide">
+                <h3 class="invisible">Озвученные</h3>
+                <h3 class="center-align scale-animation">Предания</h3>
+                <ul class="collection container audnewpc ">
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Адкуль каза</p>
+                        <br />
+                        <audio class="audfix" src="sound/padanni/goat.mp3" controls></audio>
+                        <div class="secondary-content">
+                            <a href="sound/padanni/goat.mp3" download><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Адкуль мядзведзь</p>
+                        <br />
+                        <audio class="audfix" src="sound/padanni/adkmyadz.mp3" controls></audio>
+                        <div class="secondary-content">
+                            <a href="sound/padanni/adkmyadz.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Адкуль Нясвіж</p>
+                        <br />
+                        <audio class="audfix" src="sound/padanni/adknyas.mp3" controls></audio>
+                        <div class="secondary-content">
+                            <a href="sound/padanni/adknyas.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Адкуль свет пайшоў</p>
+                        <br />
+                        <audio class="audfix" src="sound/padanni/adksv.mp3" controls></audio>
+                        <div class="secondary-content">
+                            <a href="sound/padanni/adksv.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Адкуль сяляне і паны</p>
+                        <br />
+                        <audio class="audfix" src="sound/padanni/adksyal.mp3" controls></audio>
+                        <div class="secondary-content">
+                            <a href="sound/padanni/adksyal.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Бярэсце</p>
+                        <br />
+                        <audio class="audfix" src="sound/padanni/byar.mp3" controls></audio>
+                        <div class="secondary-content">
+                            <a href="sound/padanni/byar.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Дуб і сасна</p>
+                        <br />
+                        <audio class="audfix" src="sound/padanni/dyb.mp3" controls></audio>
+                        <div class="secondary-content">
+                            <a href="sound/padanni/dyb.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Зямля</p>
+                        <br />
+                        <audio class="audfix" src="sound/padanni/zyaml.mp3" controls></audio>
+                        <div class="secondary-content">
+                            <a href="sound/padanni/zyaml.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Хут</p>
+                        <br />
+                        <audio class="audfix" src="sound/padanni/hyt.mp3" controls></audio>
+                        <div class="secondary-content">
+                            <a href="sound/padanni/hyt.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Як нарадзіліся Нёман і Лоша</p>
+                        <br />
+                        <audio class="audfix" src="sound/padanni/yaknem.mp3" controls></audio>
+                        <div class="secondary-content">
+                            <a href="sound/padanni/yaknem.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--Legends-->
+            <div id="legends" class="hide">
+                <h3 class="invisible">Озвученные</h3>
+                <h3 class="center-align scale-animation">Легенды</h3>
+                <ul class="collection container audnewpc ">
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Ахрэмаўцы</p>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/ahr1.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/ahr2.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/ahr3.mp3" controls=""></audio>
+                        <a href="https://drive.google.com/open?id=1TUnjO00A4fw8cLps_JkxTWVdtIWAw0xx" class="secondary-content" download=""><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Браслаў</p>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/brasl.mp3" controls=""></audio>
+                        <a href="sound/legends/vitebsk/brasl.mp3" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Буяны</p>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/byan1.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/byan2.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/byan3.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/byan4.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/byan5.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/byan6.mp3" controls=""></audio>
+                        <a href="https://drive.google.com/open?id=17d0N_E-kD-Uu9FTlMPqk-viT2zW0YqAd" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Глыбокае</p>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/glib1.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/glib2.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/glib3.mp3" controls=""></audio>
+                        <br>
+                        <a href="https://drive.google.com/open?id=1J84Ht_IlNGtLFpNzZPCJyDD37f_1RDUk" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Дабея</p>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/dabeya.mp3" controls=""></audio>
+                        <a href="sound/legends/vitebsk/dabeya.mp3" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Крынкі</p>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/krinki1.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/krinki2.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/krinki3.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/krinki4.mp3" controls=""></audio>
+                        <a href="https://drive.google.com/open?id=1-FjkAKuiODps1a1Q0QgNwqaMnpEH4q6L" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Лепель</p>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/lepel1.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/lepel2.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/lepel3.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/lepel4.mp3" controls=""></audio>
+                        <br>
+                        <a href="https://drive.google.com/open?id=1s7su4knCmWtfamdl0fWLOm75iLhT0bol" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Лужкі</p>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/lyzh1.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/lyzh2.mp3" controls=""></audio>
+                        <a href="https://drive.google.com/open?id=1ZKv0LpRhQfuV5KBHILg50VvXRt1ZjO83" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Ушачы</p>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/y1.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/y2.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/y3.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/y4.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/y5.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/y6.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/y7.mp3" controls=""></audio>
+                        <a href="https://drive.google.com/open?id=18NoViHcKshoarNfCC-IH9NUuQ5zm3wgY" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle purple scale-animation">language</i>
+                        <p class="kazkaname">Шаркаўшчына</p>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/sh1.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/sh2.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/sh3.mp3" controls=""></audio>
+                        <br>
+                        <audio class="audfix" src="sound/legends/vitebsk/sh4.mp3" controls=""></audio>
+                        <a href="https://drive.google.com/open?id=1jeJFcGXFhwuTSQOpBgiy_NocxVdQliH-" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Тексты -->
+            <!-- Два камянi -->
+            <div id="dvakam" class="modal modalwhite">
+                <div class="modal-content" id="modal">
+                    <h5>Два камяні <i class="material-icons pointer modalfontsize scale-animation" onclick="changefontsize()">font_download</i><i onclick="changeopacity()" class="material-icons pointer modalopacity scale-animation">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme scale-animation">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons scale-animation">close</i></h5>
+                    <p class="mainapptext">Ляжаў пры дарозе вялікі камень. Хто ні ідзе, спыніцца каля яго, пасядзіць, адпачне, а то і падсілкуецца трохі. Людзі з усяе акругі ведалі той камень і шанавалі яго. Пабудаваў у тых мясцінах адзін чалавек новы млын. Але не было ў яго камянёў для жорнаў. Паехаў ён у горад, купіў там верхні жарнавы камень і вязе яго на валах дахаты. Убачыў жарнавік свайго таварыша пры дарозе і заганарыўся. <br />— Вось бачыш, які я пан! Мяне на валах возяць, а ты нікому не патрэбен. Валяешся тут, як ламачына. Прэч з дарогі, бо расцісну, як порхаўку! <br /> Тут на валоў напалі авадні ды сляпні. Закруцілі валы хвастамі ды як скокнулі ўбок… Зачапіўся воз за камень, што ляжаў пры дарозе, вось зламалася, і ганарысты жарнавік паляцеў далоў. Ды так рэзнуўся аб прыдарожны камень, што аж усярэдзіне ў яго нешта трэснула. Ляжыць жарнавік і траха са злосці не лопаецца, што давялося апынуцца побач з такім брыдкім каменем. Тым часам млынар пачаў прыглядацца да прыдарожнага каменя. «Ці не зрабіць мне з яго споднік для жорнаў?» — думае. Паклікаў ён майстра. Агледзеў майстар камень ды выкаваў з яго споднік для млынавых жорнаў. Прывёз млынар абодва камені і зрабіў з іх жорны: камень, што валяўся пры дарозе, палажыў пад спод, а куплены — наверх. Меле сподні камень муку ды толькі радуецца, што цяпер ён яшчэ лепш служыць людзям. А верхні камень аж скрыгоча ад злосці, фанабэрыцца перад таварышам:<br /> — Куды табе да мяне! Я калі захачу, дык задушу цябе! Не ты, а я мялю муку! Пры гэтым ён так закруціўся, так зашумеў, што аж распаўся на кавалкі. Пабедаваў млынар ды выкінуў тыя кавалкі ў гразь як непатрэбныя. Купіў млынар новы жарнавік, доўга малоў ім, але і той зламаўся. А сподні камень трапіўся такі моцны ды ўдалы, што і да гэтага часу меле.</p>
+                    <a href="#!" class="modal-close modal-close-but waves-effect waves-blue btn-flat">Закрыть</a>
+                </div>
+            </div>
+            <!-- Два маразы -->
+            <div id="dvamar" class="modal modalwhite">
+                <div class="modal-content" id="modal">
+                    <h5>Два маразы <i class="material-icons pointer modalfontsize scale-animation" onclick="changefontsize()">font_download</i><i onclick="changeopacity()" class="material-icons pointer modalopacity scale-animation">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme scale-animation">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons scale-animation">close</i></h5>
+                    <p class="mainapptext">Гyлялi пa пoлi двa мapaзы, двa poдныя бpaты, мapoз Сiнi-нoc i мapoз Чыpвoны-нoc. Свaбoднa гyлялi яны нa вoлi, нiкoгa нe бaючыcя, нa ycix нaгaняючы cтpax. Мecяц cвяцiў y нoчы выcoкa ў нeбe, тыcячы зopaк гapэлi cвaiмi ciнiмi, чыpвoнымi aгнямi, дpыжaлi, пepaлiвaлicя. А нa зямлi блiшчaлi нa мecяцы мiльёны cняжынaк. Адны тoлькi мapaзы i цeшылicя xapacтвoм яcнae зiмняe нoчы, гyлялi, пepaклiкaлicя. пepaбягaлi з дpэвa нa дpэвa, з дaxy нa дax, c плoтa нa плoт, cтyкaлi, як мaлaткaмi, глядзeлi, цi кpэпкa пapoблeны мacты нa вaзёpax i pэкax, цi шчыльнa зaчынeны xaты. Нa ycё глядзeлi яны, ycюды яны зaxoдзiлi. I xвaлiлi бpaты мapaзы caмi cябe, нaзывaлi aдзiн aднaгo цapaмi. Нacтaў дзeнь, зaвapyшылicя людзi. Дым c кoмiнaў пaдняўcя cтaўбaмi, зacкpыпeлi cтyднi. Тpэбa мyжыкy exaць y лec пa дpoвы, y зapaбaткi, y млын... Цi мaлa кyды тpэбa чaлaвeкy? Нaцягнyў мyжык cyкoнныя пopткi, нaвяpцeў нa нoгi cyкoнкi, нa cyкoнкi — aнyчы i кpэпкa ўшнypaвaў нoгi aбopкaмi лaпцeй. А нa cябe aпpaнyў кaжyx, нa кaжyx нaцягнyў яшчэ apмяк, нacyнyў глыбeй нa вyшы шaпкy, yзяў pyкaвiцы, cякepy i, зaпpoгшы кoнiкa, пaexaў y лec. Цэлыe aбoзы xypмaнaк пaцягнyлicя пa дapoгax. Скpыпяць caнi. вaлiць пap aд кoнeй, звiняць звaнoчкi нaд пaнcкiмi дyгaмi. Вocь i зaдyмaлi мapaзы Сiнi-нoc i Чыpвoны-нoc пaгyляць, pacпpacтaвaць xaлoдныя плeчы. пaжapтaвaць i зaдaць cтpaxy cмeльчaкaм, штo нe пaбaялicя нa мapoз cвoй нoc пaкaзaць. I пaбeг aдзiн мapoз, Сiнi-нoc, дaгaняць пaнcкi вaзoк, a дpyгi зa мyжыкoм пaгнaўcя. Цёплa aпpaнyўcя пaн, зaкpyцiўcя ў фyтpa, cxaвaў нoгi y вaлёнкi ды нaкpыў ix яшчэ з вepxy мядзьвeжaю cкypaю. Дaгнaў ягo мapoз Сiнi-нoc, xoць i дoўгa гнaўcя зa iм, зaлeз пaнy пaд фyтpa i дaвaй шчыпaць пaнcкyю acoбy. Пaцяшaeццa пaн, кpычыць нa xypмaнa, кaб cкapэй пaгaняў кoнi. Дpyжнa бягyць кoнi, мepзнyць пaнcкiя нoгi, aбpacтae кaўнep фyтpa бeлым cнeгaм, пaбялeлi i вycы, i бapaдa. Лeдзь дaexaў пaн y cвae цёплыя пaкoi. <br /> — Нex ягo д'яблi з мapoзaм, — вылaяў пaн мapoзa, пpыexaўшы дa дoмy, a мapoз Сiнi-нoc тoлькi cмяeццa i пaбeг вaлтyзiць дpyгix eздaкoў. Нe тaк пaшaнцaвaлa мapoзy Чыpвoнaмy-нocy. Нe тaк тa лёгкa былo cпpaвiццa з мyжыкoм, xoць i нe былo нa iм нi фyтpы, нi мяккix вaлёнкaў. Дaгнaў ягo мapoз cкopa, вяpcтy зa iм бeг, ня бoлeй, i дaвaй cцicкaць мyжыцкiя кocцi. <br /> — Оcь, кaб ты згapэлa! — вылaяўcя мyжык i злeз з вoзa. Кpыкнyў ён, cвicнyў нa кoнiкa, бяжыць pыccю дpoбнaю кoнiк, a мyжык зa iм бяжыць. тyпae нaгaмi, пaдcкoквae, лyпiць pyкaмi aб плeчы. Аж y пoт кiнyлa мapoзa, лeдзь yцёк ён з мyжыцкaгa лaпця. Нaгpэўcя мyжык. yзлeз нa вoз, нaклaдвae ў люлькy тyтyн i зaбыўcя, штo i мapoз ёcць нa cвeцe. <br /> — Стoй, бpaт, дaбяpycя ж тaкi я дa цябe y лece, дyмae мapoз Чыpвoны-нoc. Кiнyў ён мyжыкa, aпяpэдзiў ягo, зaбeг y лec, ceў тaм нaд eлкy i чaкae мyжыкa. Вocь i мyжык пpыexaў. Спынiў ён кaня, пaвeciў ямy нa гaлaвy тopбy c ceчкaю. Пoкi мyжык вeшaў кaню тopбy i пpыбipaў caнi, мapoз acмeлiўcя, вылeз c нaд eлкi i ўжo пaмкнyўcя дa мyжыкa, a як yбaчыў y pyкax ягo cякepy — нaзaд бeгaм пaд eлкy. Сядзiць пaд eлкaю мapoз Чыpвoны-нoc, cядзiць ды дyмae, як дa мyжыкa пpыcтyпiццa. А мyжык, yзяўшы cякepy, дaвaй гaллё цepaбiць. Аж гopaчa ямy зpaбiлacя; cкiнyў ён apмяк i кaжyx, i шaпкy ccyнyў ca лбa нa пaтылiцy. Мapoзa злocць пaчынaлa paзбipaць: мyжык пpocтa тaкi cмяяўcя з ягo! І вoт шчacлiвaя дyмкa пpыйшлa y гaлaвy мapoзy, aж пaвecялeў ён. Скpaўcя ён i ceў нa цёплы мyжыцкi кaжyx, зaлeз y pyкaвы i зa кaўнep, cядзiць i cмяeццa з мyжыкa. <br /> — Вocь. бpaт, бyдзe тaбe гacцiнeц, дyмae caм caбe мapoз i paзлёгcя нa кaжyce, як y cвaёй xaцe, i дaвaй зaтыкaць шэpcць нa кaжyce бeлымi нiцямi. I cкopa кaжyx зpaбiўcя бeлы, як cнeг. Скoнчыў мyжык cвaю paбoтy, caбpaўcя ўжo дaдoмy exaць. Ідзe ён бpaць кaжyx. <br /> — Эгэ, бpaцe, як ты пpымaйcтpaвaўcя тyт, — cкaзaў мyжык, нa пaбялeўшы кaжyx глянyўшы, — цi нe дyмaeш ты зiмaвaць тyт? Узяў мyжык кaжyx y aднy pyкy, y дpyгyю пyгaўё i дaвaй пaлoць бeлыя нiцi мapoзa. Аж y жap кiнyлa мapoзa. Кiдaўcя ён i тyды, i cюды. А мyжык ягo тpэплe ды пpыгaвopвae: <br /> — Оcь як y мянe! ocь як y мянe! Кaжyx мoй! кaжyx мoй! Выcкaчыў мapoз ды дpaлa. <br /> I c тaгo чacy мapoз нe мae нa мyжыкa вoкa aж дaгэтyль.</p>
+                    <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
+                </div>
+            </div>
+            <!-- Жорау и чапля -->
+            <div id="zhorch" class="modal modalwhite">
+                <div class="modal-content" id="modal">
+                    <h5>Жораў i чапля <i class="material-icons pointer modalfontsize scale-animation" onclick="changefontsize()">font_download</i><i onclick="changeopacity()" class="material-icons pointer modalopacity scale-animation">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme scale-animation">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons scale-animation">close</i></h5>
+                    <p class="mainapptext">Жылі сабе па канцах балота жораў і чапля. Стала ім сумна жыць, і вось задумаў жораў к чаплі ў сваты ісці. Ціпяху-ліпяху, сем вёрст па маху, цераз бор ды ў чаплін двор.
+                        <br />— Здароў, чапля! <br />— Здароў, жораў!<br /> — Ці не пойдзеш, чапля, за мяне замуж? <br />— А, твае ногі доўгі, пер’і кароткі, дужа ты непрыгож і ні к чорту не гож; ідзі сабе дзе быў!<br /> Жораў перабраўся зноў цераз бор ды і прыйшоў у свой двор. Раздумалася чапля, што за жорава замуж не пайшла: «Дай-ка пайду яго перапрашу». Ціпяху-ліпяху, сем вёрст па маху, цераз бор ды і к жораву ў двор. <br />— Здароў, жоpay!<br /> — Здароў, чапля!<br /> — Вазьмі мяне замуж за сябе!<br /> — Твая шыя і сіня, і крыва, і сама ты гарбата; такая мне не трэба!
+                        Хоць і стыдна і абідна, аднак чапля паплялася цераз бор назад у свой двор. Жалка стала жораву, што не ўзяў чаплю ўбогую, і зноў пайшоў ён тою самаю дарогай. Ціпяху-ліпяху, сем вёрст па маху, цераз бор ды ў чаплін двор.<br /> — Здароў, чапля!<br /> — Здароў, жораў!<br /> — Ці не пойдзеш, чапля, за мяне замуж?<br /> — А, твае ногі доўгі, пер’і кароткі, дужа ты непрыгож і ні к чорту не гож; ідзі сабе дзе быў! Жораў перабраўся зноў цераз бор ды і прыйшоў у свой двор. Раздумалася чапля, што за жорава замуж не пайшла: «Дай-ка пайду яго перапрашу».<br /> Так цэлы свой век яны ходзяць адзін к другому ў сваты, але ўсё-такі па канцах балота абаіх іх засталіся хаты.</p>
+                    <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
+                </div>
+            </div>
+            <!-- Зайчыкi -->
+            <div id="zaichiki" class="modal modalwhite">
+                <div class="modal-content" id="modal">
+                    <h5>Зайчыкі<i class="material-icons pointer modalfontsize scale-animation" onclick="changefontsize()">font_download</i> <i onclick="changeopacity()" class="material-icons pointer modalopacity scale-animation">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme scale-animation">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons scale-animation">close</i></h5>
+                    <p class="mainapptext">Селі два зайкі ў лясочку пад бярэзінкаю, грэюцца на сонейку і гутараць.
+                        А ў лясочку так добранька!.. Мушкі гудуць, адна за адною ганяюцца, крыльцамі звоняць, як бы смяюцца. А там дроздзік пасвіствае, хлопчыка Піліпку падражнівае: — Пюліп! Пюліп! А Піліпка па верасочку з кошыкам ходзіць, на баравічкі прыглядаецца. Яшчэ далей зязюлька кукуе. Ну так ясна, цёпла, весела! Але нявесела зайчыкам, невясёлыя гутаркі іх. – Ох, якая горкая долечка наша, — кажа адзін зайчык. — Бойся кожны дзянёчак, трасіся кожную часінку, хадзі, прыслухоўвайся, ці не ходзіць вораг твой блізка. – А колькі ў нас ворагаў? Хто толькі не крыўдзіць нас, бедных зайчыкаў? – Крыўдзяць нас людзі, крыўдзяць звяры; нават птушкі-драпежнікі — каршуны, совы, пугачы — і тыя нас, зайчыкаў, ушчуваюць. — I як бараніцца нам ад злых нашых ворагаў? Чым ратаваціся? Адна толькі надзея на нашы ножкі: выбавяць з бяды — наша шчасце, а не выбавяць — прапала наша скурка! I заплакалі горкенька зайчыкі. Плачуць і слёзкі лапкамі выціраюць. — Ці ж можна нам жыць на свеце? — кажа другі зайчык. — Ніхто не баіцца нас, — ну, ніхтосенькі!.. Пойдзем, хіба, ды ў ваду кінемся. Наплакаліся, надумаліся бедныя зайчыкі і пайшлі ў возера тапіцца з гора. Прыйшлі да возера, прыпыніліся, развіталіся. Да самага беражка падышлі, каб у ваду кінуцца, аж бачаць — скок жаба на купіну: убачыла зайчыкаў і спалохалася. — Эге, — кажа адзін зайчык, — ёсць жа на свеце стварэнні, што і нас баяцца. Відаць, ім яшчэ цяжэй на свеце жыць. Глянулі зайчыкі адзін на аднаго і пабеглі назад у лясок.</p>
+                    <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
+                </div>
+            </div>
+            <!-- Каток - залаты лабок -->
+            <div id="katokzal" class="modal modalwhite">
+                <div class="modal-content" id="modal">
+                    <h5>Каток - залаты лабок<i class="material-icons pointer modalfontsize scale-animation" onclick="changefontsize()">font_download</i> <i onclick="changeopacity()" class="material-icons pointer modalopacity scale-animation">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons scale-animation">close</i></h5>
+                    <p class="mainapptext">Жыў дзед з бабай. Былі яны вельмі бедныя: ні насіць няма чаго, ні варыць. Вось баба і кажа дзеду:
+                        — Вазьмі, дзеду, тапарок, паедзь у лясок, ссячы дубок, завязі на рынак, прадай і купі гарчык мукі. Спячом хлеб.
+                        Сабраўся дзед, паехаў у лясок, пачаў секчы дубок. Выскачыў з дуба каток — залаты лабок, залатое вушка, срэбранае вушка, залатая шарсцінка, срэбраная шарсцінка, залатая лапка, срэбраная лапка. — Дзеду, дзеду, што табе трэба?
+                        — Ды вось, каточак, мой галубочак, паслала мяне баба ссекчы дубок, завезці на рынак, прадаць і купіць гарчык мукі на хлеб.
+                        — Едзь, дзед, дахаты, будзе ў вас мука! Прыехаў дзед дахаты, ажно ў яго мукі поўныя засекі. Спякла баба хлеб, сама наелася, дзеда накарміла ды кажа яму: — Не шкодзіла б цяпер і заціркі наварыць. Ды солі няма. Вазьмі, дзеду, тапарок, паедзь у лясок, тукні ў дубок, ці не выскачыць каток — залаты лабок: папрасі ў яго солі. Узяў дзед тапарок, паехаў у лясок, стук у дубок!.. Выскачыў каток — залаты лабок, залатое вушка, срэбранае вушка, залатая шарсцінка, срэбраная шарсцінка, залатая лапка, срэбраная лапка. — Дзеду, дзеду, што табе трэба? — Ды вось, каточак, мой галубочак: хлеб ёсць — солі няма! — Едзь, дзед, дахаты, будзе соль! Прыехаў дзед дахаты, ажно ў яго солі цэлая дзежка стаіць. Наварыла баба заціркі, сама наелася, дзеда накарміла ды кажа яму: — Не шкодзіла б цяпер і капусты паспытаць. Вастры, дзеду, тапарок, едзь у лясок, стукні ў дубок, ці не выскачыць каток — залаты лабок: папрасі ў яго капусты. Навастрыў дзед тапарок, паехаў у лясок, стук у дубок!.. Выскачыў каток — залаты лабок, залатое вушка, срэбранае вушка, залатая шарсцінка, срэбраная шарсцінка, залатая лапка, срэбраная лапка. — Дзеду, дзеду, што табе трэба? — Ды вось, каточак, мой галубочак: хлеб ёсць, соль ёсць — капусты няма!
+                        — Едзь, дзед, дахаты, будзе капуста! Прыехаў дзед дахаты, а ў яго капусты поўная кадушка!
+                        — Ай, як добра! Вось каб цяпер яшчэ сальца... Мы б з табою капусты наварылі, сальцам закрасілі б. Не палянуйся, дзеду: вазьмі тапарок, паедзь у лясок, стукні ў дубок, ці не выскачыць каток — залаты лабок: папрасі ў яго сальца.
+                        Узяў дзед тапарок, паехаў у лясок, стук у дубок!.. Выскачыў каток — залаты лабок, залатое вушка, срэбранае вушка, залатая шарсцінка, срэбраная шарсцінка, залатая лапка, срэбраная лапка.
+                        — Дзеду, дзеду, што табе трэба? — Ды вось, каточак, мой галубочак: просіць баба яшчэ сальца да капусты.
+                        — Добра, дзед, едзь дахаты, будзе сала. Прыязджае дзед дахаты, а ў яго сала цэлы кубелец!
+                        Рады дзед, рада баба. Сталі яны жыць ды пажываць, дзецям казкі казаць.
+                        I цяпер жывуць, хлеб жуюць, капустаю з салам закусваюць.
+                        Вось вам казка, а мне абаранкаў вязка.
+                    </p>
+                    <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
+                </div>
+            </div>
+            <!-- Курачка рабка -->
+            <div id="rabka" class="modal modalwhite">
+                <div class="modal-content" id="modal">
+                    <h5>Курачка-рабка <i class="material-icons pointer modalfontsize scale-animation" onclick="changefontsize()">font_download</i><i onclick="changeopacity()" class="material-icons pointer modalopacity scale-animation">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme scale-animation">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons scale-animation">close</i></h5>
+                    <p class="mainapptext">Жыў дзед, жыла бабка. Была ў іх курачка-рабка. Нанесла курачка яечак поўны падпечак. Сабрала бабка яечкі ў чарапіцу ды паставіла на паліцу. Мышка бегла, хвосьцікам махнула, чарапіца ўпала, яечкі пабіліся.
+                        Плача дзед, плача бабка, курачка кудахча, вароты скрыпяць, трэскі ляцяць, сарокі трашчаць, гусі крычаць, сабакі брэшуць.
+                        Ідзе воўк: - Дзедка, бабка, чаго вы плачаце? - Як-жа нам ня плакаць? Была ў нас курачка-рабка. Нанесла курачка яечак поўны падпечак. Сабрала бабка яечкі ў чарапіцу ды паставіла на паліцу. Мышка бегла, хвосьцікам махнула, чарапіца ўпала, яечкі пабіліся. І воўк завыў. Ідзе мядзьведзь: - Воўк, чаго выеш? - Як-жа мне ня выць? Жыў дзед, жыла бабка. Была ў іх курачка-рабка. Нанесла курачка яечак поўны падпечак. Сабрала бабка яечкі ў чарапіцу ды паставіла на паліцу. Мышка бегла, хвосьцікам махнула, чарапіца ўпала, яечкі пабіліся. Плача дзед, плача бабка, курачка кудахча, вароты скрыпяць, трэскі ляцяць, сарокі трашчаць, гусі крычаць, сабакі брэшуць... А я брахаць ня ўмею, дык і завыў.
+                        Выслухаў мядзьведзь казку і адарваў сабе хвост. Так з таго часу і жыве з куртатым хвастом.
+                    </p>
+                    <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
+                </div>
+            </div>
+            <!-- Лиса и цецярук -->
+            <div id="listec" class="modal modalwhite">
+                <div class="modal-content" id="modal">
+                    <h5>Ліса і цецярук<i class="material-icons pointer modalfontsize scale-animation" onclick="changefontsize()">font_download</i> <i onclick="changeopacity()" class="material-icons pointer modalopacity scale-animation">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme scale-animation">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons scale-animation">close</i></h5>
+                    <p class="mainapptext">Сядзеў цецярук на бярозе, ну і пеў свае песні. Пачула яго ліса і захацелася ёй цецеруком падсілкавацца. Вось яна падышла да дрэва і гаворыць: <br />
+                        — Слухай, цецярук. Ці не чуў ты, што цяпер пайшлі новыя законы, каб усе звяры мірна жылі і адзін аднаго не чапалі. Такі закон ёсць, я яго сама чытала.
+                        А цецярук ёй гаворыць: <br />
+                        — Добрыя законы, але нешта, чую, недалёка сабакі брэшуць, ці не сюды яны бягуць?
+                        Збіраецца ліса ўцякаць, а цецярук ёй кажа: <br />
+                        — Дык пачакай, можа, яшчэ які закон прынясуць. Раз такі закон, каб адзін аднаго не чапаў, то няма ж чаго баяцца.
+                        Ліса гаворыць: <br />
+                        — А можа, яны яшчэ законы тыя не чыталі, то трэба ўцякаць.
+                        I дала драла!<br /> Так лісе і не ўдалося абмануць цецерука.
+                    </p>
+                    <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
+                </div>
+            </div>
+            <!-- Тексты -->
+        </div>
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script><a href="index.html"> &nbsp;Ave Team</a><!-- Переводчик -->
+                    <a href="#" onclick="doGTranslate('ru|be');return false;" title="Belarusian" class="gflag nturl" style="background-position:-0px -600px;"><img src="http://www.world-globe.ru/files/flags/belarus_l.png" height="16" width="24" alt="" /></a><a href="#" onclick="doGTranslate('ru|en');return false;" title="English" class="gflag nturl" style="background-position:-0px -0px;"><img src="http://www.world-globe.ru/files/flags/united-kingdom_l.png" height="16" width="24" alt="" /></a><a href="#" onclick="doGTranslate('ru|ru');return false;" title="Russian" class="gflag nturl" style="background-position:-500px -200px;"><img src="http://www.world-globe.ru/files/flags/russia_l.png" height="16" width="24" alt="" /></a><a href="#" onclick="doGTranslate('ru|uk');return false;" title="Ukrainian" class="gflag nturl" style="background-position:-100px -400px;"><img src="http://www.world-globe.ru/files/flags/ukraine_l.png" height="16" width="24" alt="" /></a>
+                    <style type="text/css">
+                    < !-- a.gflag {
+                        vertical-align: middle;
+                        margin-left: 2px;
+                    }
 
-        <a id="kazkibutton" class="waves-effect waves btn-animation black-text btn btn-medium white" href="#kazki" onclick="kazkishow()">Сказки</a>   
-        <a id="padannibutton" class="waves-effect waves btn-animation black-text btn btn-medium white "  href="#padanni" onclick="padannishow()">Предания</a>   
-        <a id="legendsbutton" class="waves-effect waves btn-animation black-text btn btn-medium white "  href="#legends" onclick="legendsshow()">Легенды</a>
-      </div>
+                    a.gflag img {
+                        border: 0;
+                    }
+
+                    #goog-gt-tt {
+                        display: none !important;
+                    }
+
+                    .goog-te-banner-frame {
+                        display: none !important;
+                    }
+
+                    body {
+                        top: 0 !important;
+                    }
+
+                    #google_translate_element2 {
+                        display: none !important;
+                    }
+
+                    -->
+                    </style>
+                    <br /><select onchange="doGTranslate(this);"></select>
+                    <div id="google_translate_element2"></div>
+                    <script type="text/javascript">
+                    function googleTranslateElementInit2() { new google.translate.TranslateElement({ pageLanguage: 'ru', autoDisplay: false }, 'google_translate_element2'); }
+                    </script>
+                    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+                    <script type="text/javascript">
+                    /* <![CDATA[ */
+                    eval(function(p, a, c, k, e, r) { e = function(c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c);
+                            k = [function(e) { return r[e] }];
+                            e = function() { return '\\w+' };
+                            c = 1 }; while (c--)
+                            if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
+                    /* ]]> */
+                    </script>
+                    <!-- Переводчик -->
+                </div>
+            </div>
+        </footer>
     </div>
+    <script src="js/divide.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.sidenav').sidenav();
+    });
+    $(document).ready(function() {
+        $('.tooltipped').tooltip();
+    });
+    $(document).ready(function() {
+        $('.modal').modal();
+    });
+    $(document).ready(function() {
+        $('body').append('<i class="material-icons" id="go-top">keyboard_arrow_up</i>');
+    });
+
+    $(function() {
+        $.fn.scrollToTop = function() {
+            $(this).hide().removeAttr("href");
+            if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+            var scrollDiv = $(this);
+            $(window).scroll(function() {
+                if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+                else $(scrollDiv).fadeIn("slow")
+            });
+            $(this).click(function() {
+                $("html, body").animate({ scrollTop: 0 }, "slow")
+            })
+        }
+    });
 
-
-
-
-    
-
-
-
-    <!--Kazki-->
-    <div style="position:relative; margin-top:300px;">
-      <div id="kazki" class="hide">     
-        <h3 class="invisible">Озвученные</h3>
-        <h3 class="center-align scale-animation">Сказки</h3>
-        <ul class="collection container audnewpc ">
-          <li class="collection-item avatar">
-           <i class="material-icons circle purple scale-animation">language</i>
-           <p class="kazkaname" >Два камяні</p>
-           <br/>
-           <audio class="audfix" src="sound/dvakam.mp3" controls></audio>
-           <div class="secondary-content">
-           <a href="sound/dvakam.mp3" download><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" style="color:purple;" href="#dvakam">bookmark</i>
-         </div>
-           
-           
-         </li>
-         <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Два маразы</p>
-          <br/>
-          <audio class="audfix" src="sound/dvamar.mp3" controls></audio>
-          <div class="secondary-content">
-          <a href="sound/dvamar.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#dvamar" style="color:purple;">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Жораў i чапля</p>
-          <br/>
-          <audio class="audfix" src="sound/zhor.mp3" controls></audio>
-          <div class="secondary-content">
-          <a href="sound/zhor.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#zhorch" style="color:purple;">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Зайчыкі</p>
-          <br/>
-          <audio class="audfix" src="sound/zaya.mp3" controls></audio>
-          <div class="secondary-content">
-          <a href="sound/zaya.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#zaichiki" style="color:purple;">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Каток - Залаты лабок</p>
-          <br/>
-          <audio class="audfix" src="sound/katok.mp3" controls></audio>
-          <div class="secondary-content">
-          <a href="sound/katok.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#katokzal" style="color:purple;">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Кот, ліса, воўк</p>
-          <br/>
-          <audio class="audfix" src="sound/kot.mp3" controls></audio>
-          <div class="secondary-content">
-          <a href="sound/kot.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8 ">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Курачка рабка</p>
-          <br/>
-          <audio class="audfix" src="sound/ryaba.mp3" controls></audio>
-          <div class="secondary-content">
-          <a href="sound/ryaba.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="$rabka" style="color:purple;">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Ліса і цецярук</p>
-          <br/>
-          <audio class="audfix" src="sound/lis.mp3" controls></audio>
-          <div class="secondary-content">
-          <a href="sound/lis.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#listec" style="color:purple;">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Леў і Воўк</p>
-          <br/>
-          <audio class="audfix" src="sound/ley.mp3" controls></audio>
-          <div class="secondary-content">
-          <a href="sound/ley.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8 ">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Людзей слухай, а свой розум май</p>
-          <br/>
-          <audio class="audfix" src="sound/slyh.mp3" controls></audio> <div class="secondary-content">
-          <a href="sound/slyh.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8 ">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Не кажы гоп, пакуль не пераскочыш</p>
-          <br/>
-          <audio class="audfix" src="sound/gop.mp3" controls></audio> <div class="secondary-content">
-          <a href="sound/gop.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Недалiкатны сын</p>
-          <br/>
-          <audio class="audfix" src="sound/neds.mp3" controls></audio> <div class="secondary-content">
-          <a href="sound/neds.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Паганы пан</p>
-          <br/>
-          <audio class="audfix" src="sound/pan.mp3" controls></audio> <div class="secondary-content">
-          <a href="sound/pan.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Пра што кукуе зязюля</p>
-          <br/>
-          <audio class="audfix" src="sound/zyaz.mp3" controls></audio> <div class="secondary-content">
-          <a href="sound/zyaz.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Прагны багацей</p>
-          <br/>
-          <audio class="audfix" src="sound/bagat.mp3" controls></audio> <div class="secondary-content">
-          <a href="sound/bagat.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Сынок з кулачок</p>
-          <br/>
-          <audio class="audfix" src="sound/kyl.mp3" controls></audio> <div class="secondary-content">
-          <a href="sound/kyl.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Як курачка пеўніка ратавала</p>
-          <br/>
-          <audio class="audfix" src="sound/pey.mp3" controls></audio> <div class="secondary-content">
-          <a href="sound/pey.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Як лянiвая дачка рабіць навучылася</p>
-          <br/>
-          <audio class="audfix" src="sound/dachk.mp3" controls></audio> <div class="secondary-content">
-          <a href="sound/dachk.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Як мужык хітра гуся падзяліў.mp3</p>
-          <br/>
-          <audio class="audfix" src="sound/myzh.mp3" controls></audio> <div class="secondary-content">
-          <a href="sound/myzh.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-        </li>
-
-        <li class="collection-item avatar">
-          <i class="material-icons circle purple scale-animation">language</i>
-          <p class="kazkaname" >Як пана віншавалі</p>
-          <br/>
-          <audio class="audfix" src="sound/vinsh.mp3" controls></audio> <div class="secondary-content">
-          <a href="sound/vinsh.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-  <!--padanni-->
-
-  <div id="padanni" class="hide">    
-   <h3 class="invisible">Озвученные</h3>
-   <h3 class="center-align scale-animation">Предания</h3> 
-   <ul class="collection container audnewpc ">
-
-    <li class="collection-item avatar">
-     <i class="material-icons circle purple scale-animation">language</i>
-     <p class="kazkaname" >Адкуль каза</p>
-     <br/>
-     <audio class="audfix" src="sound/padanni/goat.mp3" controls></audio> <div class="secondary-content">
-     <a href="sound/padanni/goat.mp3"  download><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-   </li>
-
-   <li class="collection-item avatar">
-    <i class="material-icons circle purple scale-animation">language</i>
-    <p class="kazkaname" >Адкуль мядзведзь</p>
-    <br/>
-    <audio class="audfix" src="sound/padanni/adkmyadz.mp3" controls></audio> <div class="secondary-content">
-    <a href="sound/padanni/adkmyadz.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-  </li>
-
-  <li class="collection-item avatar">
-    <i class="material-icons circle purple scale-animation">language</i>
-    <p class="kazkaname" >Адкуль Нясвіж</p>
-    <br/>
-    <audio class="audfix" src="sound/padanni/adknyas.mp3" controls></audio> <div class="secondary-content">
-    <a href="sound/padanni/adknyas.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-  </li>
-
-  <li class="collection-item avatar">
-    <i class="material-icons circle purple scale-animation">language</i>
-    <p class="kazkaname" >Адкуль свет пайшоў</p>
-    <br/>
-    <audio class="audfix" src="sound/padanni/adksv.mp3" controls></audio> <div class="secondary-content">
-    <a href="sound/padanni/adksv.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-  </li>
-
-  <li class="collection-item avatar">
-    <i class="material-icons circle purple scale-animation">language</i>
-    <p class="kazkaname" >Адкуль сяляне і паны</p>
-    <br/>
-    <audio class="audfix" src="sound/padanni/adksyal.mp3" controls></audio> <div class="secondary-content">
-    <a href="sound/padanni/adksyal.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-  </li>
-
-  <li class="collection-item avatar">
-    <i class="material-icons circle purple scale-animation">language</i>
-    <p class="kazkaname" >Бярэсце</p>
-    <br/>
-    <audio class="audfix" src="sound/padanni/byar.mp3" controls></audio> <div class="secondary-content">
-    <a href="sound/padanni/byar.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-  </li>
-
-  <li class="collection-item avatar">
-    <i class="material-icons circle purple scale-animation">language</i>
-    <p class="kazkaname" >Дуб і сасна</p>
-    <br/>
-    <audio class="audfix" src="sound/padanni/dyb.mp3" controls></audio> <div class="secondary-content">
-    <a href="sound/padanni/dyb.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-  </li>
-
-  <li class="collection-item avatar">
-    <i class="material-icons circle purple scale-animation">language</i>
-    <p class="kazkaname" >Зямля</p>
-    <br/>
-    <audio class="audfix" src="sound/padanni/zyaml.mp3" controls></audio> <div class="secondary-content">
-    <a href="sound/padanni/zyaml.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-  </li>
-
-  <li class="collection-item avatar">
-    <i class="material-icons circle purple scale-animation">language</i>
-    <p class="kazkaname" >Хут</p>
-    <br/>
-    <audio class="audfix" src="sound/padanni/hyt.mp3" controls></audio> <div class="secondary-content">
-    <a href="sound/padanni/hyt.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-  </li>
-
-  <li class="collection-item avatar">
-    <i class="material-icons circle purple scale-animation">language</i>
-    <p class="kazkaname" >Як нарадзіліся Нёман і Лоша</p>
-    <br/>
-    <audio class="audfix" src="sound/padanni/yaknem.mp3" controls></audio> <div class="secondary-content">
-    <a href="sound/padanni/yaknem.mp3" ><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
-         </div>
-  </li>
-
-</ul>
-</div>
-<!--Legends-->
-
-<div id="legends" class="hide">   
- <h3 class="invisible">Озвученные</h3>
- <h3 class="center-align scale-animation">Легенды</h3>  
- <ul class="collection container audnewpc ">
-
-  <li class="collection-item avatar">
-   <i class="material-icons circle purple scale-animation">language</i>
-   <p class="kazkaname">Ахрэмаўцы</p>
-   <br>
-   <audio class="audfix" src="sound/legends/vitebsk/ahr1.mp3" controls=""></audio>
-   <br>
-   <audio class="audfix" src="sound/legends/vitebsk/ahr2.mp3" controls=""></audio>
-   <br>
-   <audio class="audfix" src="sound/legends/vitebsk/ahr3.mp3" controls=""></audio>
-   <a href="https://drive.google.com/open?id=1TUnjO00A4fw8cLps_JkxTWVdtIWAw0xx" class="secondary-content" download=""><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
- </li>
-
- <li class="collection-item avatar">
-  <i class="material-icons circle purple scale-animation">language</i>
-  <p class="kazkaname">Браслаў</p>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/brasl.mp3" controls=""></audio>
-  <a href="sound/legends/vitebsk/brasl.mp3" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
-</li>
-
-<li class="collection-item avatar">
-  <i class="material-icons circle purple scale-animation">language</i>
-  <p class="kazkaname">Буяны</p>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/byan1.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/byan2.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/byan3.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/byan4.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/byan5.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/byan6.mp3" controls=""></audio>
-  <a href="https://drive.google.com/open?id=17d0N_E-kD-Uu9FTlMPqk-viT2zW0YqAd" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
-</li>
-
-<li class="collection-item avatar">
-  <i class="material-icons circle purple scale-animation">language</i>
-  <p class="kazkaname">Глыбокае</p>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/glib1.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/glib2.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/glib3.mp3" controls=""></audio>
-  <br>
-  <a href="https://drive.google.com/open?id=1J84Ht_IlNGtLFpNzZPCJyDD37f_1RDUk" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
-</li>
-
-<li class="collection-item avatar">
-  <i class="material-icons circle purple scale-animation">language</i>
-  <p class="kazkaname">Дабея</p>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/dabeya.mp3" controls=""></audio>
-  <a href="sound/legends/vitebsk/dabeya.mp3" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
-</li>
-
-<li class="collection-item avatar">
-  <i class="material-icons circle purple scale-animation">language</i>
-  <p class="kazkaname">Крынкі</p>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/krinki1.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/krinki2.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/krinki3.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/krinki4.mp3" controls=""></audio>
-  <a href="https://drive.google.com/open?id=1-FjkAKuiODps1a1Q0QgNwqaMnpEH4q6L" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
-</li>
-
-<li class="collection-item avatar">
-  <i class="material-icons circle purple scale-animation">language</i>
-  <p class="kazkaname">Лепель</p>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/lepel1.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/lepel2.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/lepel3.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/lepel4.mp3" controls=""></audio>
-  <br>
-  <a href="https://drive.google.com/open?id=1s7su4knCmWtfamdl0fWLOm75iLhT0bol" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
-</li>
-
-<li class="collection-item avatar">
-  <i class="material-icons circle purple scale-animation">language</i>
-  <p class="kazkaname">Лужкі</p>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/lyzh1.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/lyzh2.mp3" controls=""></audio>
-  <a href="https://drive.google.com/open?id=1ZKv0LpRhQfuV5KBHILg50VvXRt1ZjO83" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
-</li>
-
-<li class="collection-item avatar">
-  <i class="material-icons circle purple scale-animation">language</i>
-  <p class="kazkaname">Ушачы</p>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/y1.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/y2.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/y3.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/y4.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/y5.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/y6.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/y7.mp3" controls=""></audio>
-  <a href="https://drive.google.com/open?id=18NoViHcKshoarNfCC-IH9NUuQ5zm3wgY" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
-</li>
-
-<li class="collection-item avatar">
-  <i class="material-icons circle purple scale-animation">language</i>
-  <p class="kazkaname">Шаркаўшчына</p>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/sh1.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/sh2.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/sh3.mp3" controls=""></audio>
-  <br>
-  <audio class="audfix" src="sound/legends/vitebsk/sh4.mp3" controls=""></audio>
-  <a href="https://drive.google.com/open?id=1jeJFcGXFhwuTSQOpBgiy_NocxVdQliH-" class="secondary-content"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a>
-</li>
-
-</ul>
-</div>
-
-   <!-- Тексты -->
-
-  <!-- Два камянi -->
-  <div id="dvakam" class="modal modalwhite" >
-    <div class="modal-content" id="modal">
-      <h4>Два камяні  <i onclick="changeopacity()" class="material-icons pointer modalopacity">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons">close</i></h4>
-      <p>Ляжаў пры дарозе вялікі камень. Хто ні ідзе, спыніцца каля яго, пасядзіць, адпачне, а то і падсілкуецца трохі. Людзі з усяе акругі ведалі той камень і шанавалі яго. Пабудаваў у тых мясцінах адзін чалавек новы млын. Але не было ў яго камянёў для жорнаў. Паехаў ён у горад, купіў там верхні жарнавы камень і вязе яго на валах дахаты. Убачыў жарнавік свайго таварыша пры дарозе і заганарыўся. <br/>— Вось бачыш, які я пан! Мяне на валах возяць, а ты нікому не патрэбен. Валяешся тут, як ламачына. Прэч з дарогі, бо расцісну, як порхаўку! <br/> Тут на валоў напалі авадні ды сляпні. Закруцілі валы хвастамі ды як скокнулі ўбок… Зачапіўся воз за камень, што ляжаў пры дарозе, вось зламалася, і ганарысты жарнавік паляцеў далоў. Ды так рэзнуўся аб прыдарожны камень, што аж усярэдзіне ў яго нешта трэснула. Ляжыць жарнавік і траха са злосці не лопаецца, што давялося апынуцца побач з такім брыдкім каменем. Тым часам млынар пачаў прыглядацца да прыдарожнага каменя. «Ці не зрабіць мне з яго споднік для жорнаў?» — думае. Паклікаў ён майстра. Агледзеў майстар камень ды выкаваў з яго споднік для млынавых жорнаў. Прывёз млынар абодва камені і зрабіў з іх жорны: камень, што валяўся пры дарозе, палажыў пад спод, а куплены — наверх. Меле сподні камень муку ды толькі радуецца, што цяпер ён яшчэ лепш служыць людзям. А верхні камень аж скрыгоча ад злосці, фанабэрыцца перад таварышам:<br/> — Куды табе да мяне! Я калі захачу, дык задушу цябе! Не ты, а я мялю муку! Пры гэтым ён так закруціўся, так зашумеў, што аж распаўся на кавалкі. Пабедаваў млынар ды выкінуў тыя кавалкі ў гразь як непатрэбныя. Купіў млынар новы жарнавік, доўга малоў ім, але і той зламаўся. А сподні камень трапіўся такі моцны ды ўдалы, што і да гэтага часу меле.</p>
-            <a href="#!" class="modal-close modal-close-but waves-effect waves-blue btn-flat">Закрыть</a>
-    </div>
-
-  </div>
-
-  <!-- Два маразы -->
-  <div id="dvamar" class="modal modalwhite">
-    <div class="modal-content" id="modal">
-      <h4>Два маразы <i onclick="changeopacity()" class="material-icons pointer modalopacity">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons">close</i></h4>
-      <p>Гyлялi пa пoлi двa мapaзы, двa poдныя бpaты, мapoз Сiнi-нoc i мapoз Чыpвoны-нoc.    Свaбoднa гyлялi яны нa вoлi, нiкoгa нe бaючыcя, нa ycix нaгaняючы cтpax. Мecяц cвяцiў y нoчы выcoкa ў нeбe, тыcячы зopaк гapэлi cвaiмi ciнiмi, чыpвoнымi aгнямi, дpыжaлi, пepaлiвaлicя. А нa зямлi блiшчaлi нa мecяцы мiльёны cняжынaк. Адны тoлькi мapaзы i цeшылicя xapacтвoм яcнae зiмняe нoчы, гyлялi, пepaклiкaлicя. пepaбягaлi з дpэвa нa дpэвa, з дaxy нa дax, c плoтa нa плoт, cтyкaлi, як мaлaткaмi, глядзeлi, цi кpэпкa пapoблeны мacты нa вaзёpax i pэкax, цi шчыльнa зaчынeны xaты. Нa ycё глядзeлi яны, ycюды яны зaxoдзiлi. I xвaлiлi бpaты мapaзы caмi cябe, нaзывaлi aдзiн aднaгo цapaмi.    Нacтaў дзeнь, зaвapyшылicя людзi. Дым c кoмiнaў пaдняўcя cтaўбaмi, зacкpыпeлi cтyднi. Тpэбa мyжыкy exaць y лec пa дpoвы, y зapaбaткi, y млын... Цi мaлa кyды тpэбa чaлaвeкy? Нaцягнyў мyжык cyкoнныя пopткi, нaвяpцeў нa нoгi cyкoнкi, нa cyкoнкi — aнyчы i кpэпкa ўшнypaвaў нoгi aбopкaмi лaпцeй. А нa cябe aпpaнyў кaжyx, нa кaжyx нaцягнyў яшчэ apмяк, нacyнyў глыбeй нa вyшы шaпкy, yзяў pyкaвiцы, cякepy i, зaпpoгшы кoнiкa, пaexaў y лec.    Цэлыe aбoзы xypмaнaк пaцягнyлicя пa дapoгax. Скpыпяць caнi. вaлiць пap aд кoнeй, звiняць звaнoчкi нaд пaнcкiмi дyгaмi.    Вocь i зaдyмaлi мapaзы Сiнi-нoc i Чыpвoны-нoc пaгyляць, pacпpacтaвaць xaлoдныя плeчы. пaжapтaвaць i зaдaць cтpaxy cмeльчaкaм, штo нe пaбaялicя нa мapoз cвoй нoc пaкaзaць.    I пaбeг aдзiн мapoз, Сiнi-нoc, дaгaняць пaнcкi вaзoк, a дpyгi зa мyжыкoм пaгнaўcя. Цёплa aпpaнyўcя пaн, зaкpyцiўcя ў фyтpa, cxaвaў нoгi y вaлёнкi ды нaкpыў ix яшчэ з вepxy мядзьвeжaю cкypaю. Дaгнaў ягo мapoз Сiнi-нoc, xoць i дoўгa гнaўcя зa iм, зaлeз пaнy пaд фyтpa i дaвaй шчыпaць пaнcкyю acoбy. Пaцяшaeццa пaн, кpычыць нa xypмaнa, кaб cкapэй пaгaняў кoнi. Дpyжнa бягyць кoнi, мepзнyць пaнcкiя нoгi, aбpacтae кaўнep фyтpa бeлым cнeгaм, пaбялeлi i вycы, i бapaдa. Лeдзь дaexaў пaн y cвae цёплыя пaкoi.  <br/>  — Нex ягo д'яблi з мapoзaм, — вылaяў пaн мapoзa, пpыexaўшы дa дoмy, a мapoз Сiнi-нoc тoлькi cмяeццa i пaбeг вaлтyзiць дpyгix eздaкoў.    Нe тaк пaшaнцaвaлa мapoзy Чыpвoнaмy-нocy. Нe тaк тa лёгкa былo cпpaвiццa з мyжыкoм, xoць i нe былo нa iм нi фyтpы, нi мяккix вaлёнкaў. Дaгнaў ягo мapoз cкopa, вяpcтy зa iм бeг, ня бoлeй, i дaвaй cцicкaць мyжыцкiя кocцi.  <br/>  — Оcь, кaб ты згapэлa! — вылaяўcя мyжык i злeз з вoзa. Кpыкнyў ён, cвicнyў нa кoнiкa, бяжыць pыccю дpoбнaю кoнiк, a мyжык зa iм бяжыць. тyпae нaгaмi, пaдcкoквae, лyпiць pyкaмi aб плeчы. Аж y пoт кiнyлa мapoзa, лeдзь yцёк ён з мyжыцкaгa лaпця. Нaгpэўcя мyжык. yзлeз нa вoз, нaклaдвae ў люлькy тyтyн i зaбыўcя, штo i мapoз ёcць нa cвeцe.  <br/>  — Стoй, бpaт, дaбяpycя ж тaкi я дa цябe y лece, дyмae мapoз Чыpвoны-нoc. Кiнyў ён мyжыкa, aпяpэдзiў ягo, зaбeг y лec, ceў тaм нaд eлкy i чaкae мyжыкa. Вocь i мyжык пpыexaў. Спынiў ён кaня, пaвeciў ямy нa гaлaвy тopбy c ceчкaю. Пoкi мyжык вeшaў кaню тopбy i пpыбipaў caнi, мapoз acмeлiўcя, вылeз c нaд eлкi i ўжo пaмкнyўcя дa мyжыкa, a як yбaчыў y pyкax ягo cякepy — нaзaд бeгaм пaд eлкy. Сядзiць пaд eлкaю мapoз Чыpвoны-нoc, cядзiць ды дyмae, як дa мyжыкa пpыcтyпiццa. А мyжык, yзяўшы cякepy, дaвaй гaллё цepaбiць. Аж гopaчa ямy зpaбiлacя; cкiнyў ён apмяк i кaжyx, i шaпкy ccyнyў ca лбa нa пaтылiцy. Мapoзa злocць пaчынaлa paзбipaць: мyжык пpocтa тaкi cмяяўcя з ягo! І вoт шчacлiвaя дyмкa пpыйшлa y гaлaвy мapoзy, aж пaвecялeў ён. Скpaўcя ён i ceў нa цёплы мyжыцкi кaжyx, зaлeз y pyкaвы i зa кaўнep, cядзiць i cмяeццa з мyжыкa. <br/>   — Вocь. бpaт, бyдзe тaбe гacцiнeц, дyмae caм caбe мapoз i paзлёгcя нa кaжyce, як y cвaёй xaцe, i дaвaй зaтыкaць шэpcць нa кaжyce бeлымi нiцямi. I cкopa кaжyx зpaбiўcя бeлы, як cнeг. Скoнчыў мyжык cвaю paбoтy, caбpaўcя ўжo дaдoмy exaць. Ідзe ён бpaць кaжyx.  <br/>  — Эгэ, бpaцe, як ты пpымaйcтpaвaўcя тyт, — cкaзaў мyжык, нa пaбялeўшы кaжyx глянyўшы, — цi нe дyмaeш ты зiмaвaць тyт?    Узяў мyжык кaжyx y aднy pyкy, y дpyгyю пyгaўё i дaвaй пaлoць бeлыя нiцi мapoзa.    Аж y жap кiнyлa мapoзa. Кiдaўcя ён i тyды, i cюды. А мyжык ягo тpэплe ды пpыгaвopвae:  <br/>  — Оcь як y мянe! ocь як y мянe! Кaжyx мoй! кaжyx мoй!    Выcкaчыў мapoз ды дpaлa.   <br/> I c тaгo чacy мapoз нe мae нa мyжыкa вoкa aж дaгэтyль.</p>
-      <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
-    </div>
-  </div>
-
-  <!-- Жорау и чапля -->
-  <div id="zhorch" class="modal modalwhite">
-    <div class="modal-content" id="modal">
-      <h4>Жораў i чапля <i onclick="changeopacity()" class="material-icons pointer modalopacity">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons">close</i></h4>
-      <p>Жылі сабе па канцах балота жораў і чапля. Стала ім сумна жыць, і вось задумаў жораў к чаплі ў сваты ісці. Ціпяху-ліпяху, сем вёрст па маху, цераз бор ды ў чаплін двор.
-<br/>— Здароў, чапля! <br/>— Здароў, жораў!<br/> — Ці не пойдзеш, чапля, за мяне замуж? <br/>— А, твае ногі доўгі, пер’і кароткі, дужа ты непрыгож і ні к чорту не гож; ідзі сабе дзе быў!<br/> Жораў перабраўся зноў цераз бор ды і прыйшоў у свой двор. Раздумалася чапля, што за жорава замуж не пайшла: «Дай-ка пайду яго перапрашу». Ціпяху-ліпяху, сем вёрст па маху, цераз бор ды і к жораву ў двор. <br/>— Здароў, жоpay!<br/> — Здароў, чапля!<br/> — Вазьмі мяне замуж за сябе!<br/> — Твая шыя і сіня, і крыва, і сама ты гарбата; такая мне не трэба!
-Хоць і стыдна і абідна, аднак чапля паплялася цераз бор назад у свой двор. Жалка стала жораву, што не ўзяў чаплю ўбогую, і зноў пайшоў ён тою самаю дарогай. Ціпяху-ліпяху, сем вёрст па маху, цераз бор ды ў чаплін двор.<br/> — Здароў, чапля!<br/> — Здароў, жораў!<br/> — Ці не пойдзеш, чапля, за мяне замуж?<br/> — А, твае ногі доўгі, пер’і кароткі, дужа ты непрыгож і ні к чорту не гож; ідзі сабе дзе быў! Жораў перабраўся зноў цераз бор ды і прыйшоў у свой двор. Раздумалася чапля, што за жорава замуж не пайшла: «Дай-ка пайду яго перапрашу».<br/> Так цэлы свой век яны ходзяць адзін к другому ў сваты, але ўсё-такі па канцах балота абаіх іх засталіся хаты.</p>
- <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
-    </div>
-  </div>
-
-  <!-- Зайчыкi -->
-  <div id="zaichiki" class="modal modalwhite" >
-    <div class="modal-content" id="modal">
-      <h4>Зайчыкі <i onclick="changeopacity()" class="material-icons pointer modalopacity">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons">close</i></h4>
-      <p>Селі два зайкі ў лясочку пад бярэзінкаю, грэюцца на сонейку і гутараць.
-А ў лясочку так добранька!.. Мушкі гудуць, адна за адною ганяюцца, крыльцамі звоняць, як бы смяюцца. А там дроздзік пасвіствае, хлопчыка Піліпку падражнівае: — Пюліп! Пюліп! А Піліпка па верасочку з кошыкам ходзіць, на баравічкі прыглядаецца. Яшчэ далей зязюлька кукуе. Ну так ясна, цёпла, весела! Але нявесела зайчыкам, невясёлыя гутаркі іх. – Ох, якая горкая долечка наша, — кажа адзін зайчык. — Бойся кожны дзянёчак, трасіся кожную часінку, хадзі, прыслухоўвайся, ці не ходзіць вораг твой блізка. – А колькі ў нас ворагаў? Хто толькі не крыўдзіць нас, бедных зайчыкаў? – Крыўдзяць нас людзі, крыўдзяць звяры; нават птушкі-драпежнікі — каршуны, совы, пугачы — і тыя нас, зайчыкаў, ушчуваюць. — I як бараніцца нам ад злых нашых ворагаў? Чым ратаваціся? Адна толькі надзея на нашы ножкі: выбавяць з бяды — наша шчасце, а не выбавяць — прапала наша скурка! I заплакалі горкенька зайчыкі. Плачуць і слёзкі лапкамі выціраюць. — Ці ж можна нам жыць на свеце? — кажа другі зайчык. — Ніхто не баіцца нас, — ну, ніхтосенькі!.. Пойдзем, хіба, ды ў ваду кінемся. Наплакаліся, надумаліся бедныя зайчыкі і пайшлі ў возера тапіцца з гора. Прыйшлі да возера, прыпыніліся, развіталіся. Да самага беражка падышлі, каб у ваду кінуцца, аж бачаць — скок жаба на купіну: убачыла зайчыкаў і спалохалася. — Эге, — кажа адзін зайчык, — ёсць жа на свеце стварэнні, што і нас баяцца. Відаць, ім яшчэ цяжэй на свеце жыць. Глянулі зайчыкі адзін на аднаго і пабеглі назад у лясок.</p>
-     <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
-    </div>
-  </div>
-
-   <!-- Каток - залаты лабок -->
-  <div id="katokzal" class="modal modalwhite">
-    <div class="modal-content" id="modal">
-      <h4>Каток - залаты лабок <i onclick="changeopacity()" class="material-icons pointer modalopacity">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons">close</i></h4>
-      <p>Жыў дзед з бабай. Былі яны вельмі бедныя: ні насіць няма чаго, ні варыць. Вось баба і кажа дзеду:
-— Вазьмі, дзеду, тапарок, паедзь у лясок, ссячы дубок, завязі на рынак, прадай і купі гарчык мукі. Спячом хлеб.
-Сабраўся дзед, паехаў у лясок, пачаў секчы дубок. Выскачыў з дуба каток — залаты лабок, залатое вушка, срэбранае вушка, залатая шарсцінка, срэбраная шарсцінка, залатая лапка, срэбраная лапка. — Дзеду, дзеду, што табе трэба?
-— Ды вось, каточак, мой галубочак, паслала мяне баба ссекчы дубок, завезці на рынак, прадаць і купіць гарчык мукі на хлеб.
-— Едзь, дзед, дахаты, будзе ў вас мука! Прыехаў дзед дахаты, ажно ў яго мукі поўныя засекі. Спякла баба хлеб, сама наелася, дзеда накарміла ды кажа яму: — Не шкодзіла б цяпер і заціркі наварыць. Ды солі няма. Вазьмі, дзеду, тапарок, паедзь у лясок,  тукні ў дубок, ці не выскачыць каток — залаты лабок: папрасі ў яго солі. Узяў дзед тапарок, паехаў у лясок, стук у дубок!.. Выскачыў каток — залаты лабок, залатое вушка, срэбранае вушка, залатая шарсцінка, срэбраная шарсцінка, залатая лапка, срэбраная лапка. — Дзеду, дзеду, што табе трэба? — Ды вось, каточак, мой галубочак: хлеб ёсць — солі няма! — Едзь, дзед, дахаты, будзе соль! Прыехаў дзед дахаты, ажно ў яго солі цэлая дзежка стаіць. Наварыла баба заціркі, сама наелася, дзеда накарміла ды кажа яму: — Не шкодзіла б цяпер і капусты паспытаць. Вастры, дзеду, тапарок, едзь у лясок, стукні ў дубок, ці не выскачыць каток — залаты лабок: папрасі ў яго капусты. Навастрыў дзед тапарок, паехаў у лясок, стук у дубок!.. Выскачыў каток — залаты лабок, залатое вушка, срэбранае вушка, залатая шарсцінка, срэбраная шарсцінка, залатая лапка, срэбраная лапка. — Дзеду, дзеду, што табе трэба? — Ды вось, каточак, мой галубочак: хлеб ёсць, соль ёсць — капусты няма!
-— Едзь, дзед, дахаты, будзе капуста! Прыехаў дзед дахаты, а ў яго капусты поўная кадушка!
-— Ай, як добра! Вось каб цяпер яшчэ сальца... Мы б з табою капусты наварылі, сальцам закрасілі б. Не палянуйся, дзеду: вазьмі тапарок, паедзь у лясок, стукні ў дубок, ці не выскачыць каток — залаты лабок: папрасі ў яго сальца.
-Узяў дзед тапарок, паехаў у лясок, стук у дубок!.. Выскачыў каток — залаты лабок, залатое вушка, срэбранае вушка, залатая шарсцінка, срэбраная шарсцінка, залатая лапка, срэбраная лапка.
-— Дзеду, дзеду, што табе трэба? — Ды вось, каточак, мой галубочак: просіць баба яшчэ сальца да капусты.
-— Добра, дзед, едзь дахаты, будзе сала. Прыязджае дзед дахаты, а ў яго сала цэлы кубелец!
-Рады дзед, рада баба. Сталі яны жыць ды пажываць, дзецям казкі казаць.
-I цяпер жывуць, хлеб жуюць, капустаю з салам закусваюць.
-Вось вам казка, а мне абаранкаў вязка.
-</p>
-    <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
-    </div>
-  </div>
-
-   <!-- Курачка рабка -->
-
-  <div id="rabka" class="modal modalwhite">
-    <div class="modal-content" id="modal">
-      <h4>Курачка-рабка <i onclick="changeopacity()" class="material-icons pointer modalopacity">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons">close</i></h4>
-      <p>Жыў дзед, жыла бабка. Была ў іх курачка-рабка. Нанесла курачка яечак поўны падпечак. Сабрала бабка яечкі ў чарапіцу ды паставіла на паліцу. Мышка бегла, хвосьцікам махнула, чарапіца ўпала, яечкі пабіліся.
-Плача дзед, плача бабка, курачка кудахча, вароты скрыпяць, трэскі ляцяць, сарокі трашчаць, гусі крычаць, сабакі брэшуць.
-Ідзе воўк: - Дзедка, бабка, чаго вы плачаце? - Як-жа нам ня плакаць? Была ў нас курачка-рабка. Нанесла курачка яечак поўны падпечак. Сабрала бабка яечкі ў чарапіцу ды паставіла на паліцу. Мышка бегла, хвосьцікам махнула, чарапіца ўпала, яечкі пабіліся. І воўк завыў. Ідзе мядзьведзь: - Воўк, чаго выеш? - Як-жа мне ня выць? Жыў дзед, жыла бабка. Была ў іх курачка-рабка. Нанесла курачка яечак поўны падпечак. Сабрала бабка яечкі ў чарапіцу ды паставіла на паліцу. Мышка бегла, хвосьцікам махнула, чарапіца ўпала, яечкі пабіліся. Плача дзед, плача бабка, курачка кудахча, вароты скрыпяць, трэскі ляцяць, сарокі трашчаць, гусі крычаць, сабакі брэшуць... А я брахаць ня ўмею, дык і завыў.
-Выслухаў мядзьведзь казку і адарваў сабе хвост. Так з таго часу і жыве з куртатым хвастом.
-</p>
-    <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
-    </div>
-  </div>
-
-   <!-- Лиса и цецярук -->
-
-  <div id="listec" class="modal modalwhite">
-    <div class="modal-content" id="modal">
-      <h4>Ліса і цецярук <i onclick="changeopacity()" class="material-icons pointer modalopacity">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons">close</i></h4>
-      <p>Сядзеў цецярук на бярозе, ну і пеў свае песні. Пачула яго ліса і захацелася ёй цецеруком падсілкавацца. Вось яна падышла да дрэва і гаворыць: <br/>
-— Слухай, цецярук. Ці не чуў ты, што цяпер пайшлі новыя законы, каб усе звяры мірна жылі і адзін аднаго не чапалі. Такі закон ёсць, я яго сама чытала.
-А цецярук ёй гаворыць: <br/>
-— Добрыя законы, але нешта, чую, недалёка сабакі брэшуць, ці не сюды яны бягуць?
-Збіраецца ліса ўцякаць, а цецярук ёй кажа: <br/>
-— Дык пачакай, можа, яшчэ які закон прынясуць. Раз такі закон, каб адзін аднаго не чапаў, то няма ж чаго баяцца.
-Ліса гаворыць: <br/>
-— А можа, яны яшчэ законы тыя не чыталі, то трэба ўцякаць.
-I дала драла!<br/> Так лісе і не ўдалося абмануць цецерука.
-
-</p>
-    <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
-    </div>
-  </div>
-      <!-- Тексты -->
-
-</div>
-<footer class="page-footer">
-  <div class="footer-copyright">
-    <div class="container"><script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script><a href="index.html"> &nbsp;Kot IO Group</a><!-- Переводчик -->
-<a href="#" onclick="doGTranslate('ru|be');return false;" title="Belarusian" class="gflag nturl" style="background-position:-0px -600px;"><img src="http://www.world-globe.ru/files/flags/belarus_l.png" height="16" width="24" alt="" /></a><a href="#" onclick="doGTranslate('ru|en');return false;" title="English" class="gflag nturl" style="background-position:-0px -0px;"><img src="http://www.world-globe.ru/files/flags/united-kingdom_l.png" height="16" width="24" alt="" /></a><a href="#" onclick="doGTranslate('ru|ru');return false;" title="Russian" class="gflag nturl" style="background-position:-500px -200px;"><img src="http://www.world-globe.ru/files/flags/russia_l.png" height="16" width="24" alt="" /></a><a href="#" onclick="doGTranslate('ru|uk');return false;" title="Ukrainian" class="gflag nturl" style="background-position:-100px -400px;"><img src="http://www.world-globe.ru/files/flags/ukraine_l.png" height="16" width="24" alt="" /></a>
-<style type="text/css">
-<!--
-a.gflag {vertical-align:middle;margin-left: 2px;}
-a.gflag img {border:0;}
-#goog-gt-tt {display:none !important;}
-.goog-te-banner-frame {display:none !important;}
-body {top:0 !important;}
-#google_translate_element2 {display:none!important;}
--->
-</style>
-<br /><select onchange="doGTranslate(this);"></select><div id="google_translate_element2"></div>
-<script type="text/javascript">
-function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'ru',autoDisplay: false}, 'google_translate_element2');}
-</script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
-/* ]]> */
-</script>
-<!-- Переводчик -->
-
-    </div>
-  </div>
-</footer>
-</div>
-<script src="js/divide.js"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
- $(document).ready(function(){
-  $('.sidenav').sidenav();
-});
- $(document).ready(function(){
-  $('.tooltipped').tooltip();
-});
-$(document).ready(function(){
-    $('.modal').modal();
-  });
- $(document).ready(function(){
-  $('body').append('<i class="material-icons" id="go-top">keyboard_arrow_up</i>');
-});
-
- $(function() {
-   $.fn.scrollToTop = function() {
-    $(this).hide().removeAttr("href");
-    if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
-      var scrollDiv = $(this);
     $(window).scroll(function() {
-     if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
-       else $(scrollDiv).fadeIn("slow")
-     });
-    $(this).click(function() {
-     $("html, body").animate({scrollTop: 0}, "slow")
-   })
-  }
-});
+        if ($(this).scrollTop() > 250) {
+            $('nav').addClass("sticky");
+        } else {
+            $('nav').removeClass("sticky");
+        }
+    });
 
- $(window).scroll(function() { 
-    if ($(this).scrollTop() > 250){  
-        $('nav').addClass("sticky");
-    }
-    else{
-        $('nav').removeClass("sticky");
-    }
-});
-
- $(function() {
-   $("#go-top").scrollToTop();
- });
-</script>
+    $(function() {
+        $("#go-top").scrollToTop();
+    });
+    </script>
 </body>
+
 </html>
