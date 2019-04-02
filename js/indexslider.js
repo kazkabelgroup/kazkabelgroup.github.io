@@ -1,18 +1,18 @@
 // create pager list items
 var sliderImage = $('.slider__images-image');
 
-sliderImage.each(function (index) {
-    $('.js__slider__pagers').append('<li>'+(index+1)+'</li>');
+sliderImage.each(function(index) {
+    $('.js__slider__pagers').append('<li>' + (index + 1) + '</li>');
 });
 
 // set up vars
-var sliderPagers       = 'ol.js__slider__pagers li',
+var sliderPagers = 'ol.js__slider__pagers li',
     sliderPagersActive = '.js__slider__pagers li.active',
-    sliderImages       = '.js__slider__images',
-    sliderImagesItem   = '.slider__images-item',
-    sliderControlNext  = '.slider__control--next',
-    sliderControlPrev  = '.slider__control--prev',
-    lastElem           = $(sliderPagers).length-1,
+    sliderImages = '.js__slider__images',
+    sliderImagesItem = '.slider__images-item',
+    sliderControlNext = '.slider__control--next',
+    sliderControlPrev = '.slider__control--prev',
+    lastElem = $(sliderPagers).length - 1,
     sliderTarget;
 // set up first slide
 $(sliderPagers).first().addClass('active');
@@ -26,7 +26,7 @@ function sliderResponse(sliderTarget) {
 
 // pager controls
 $(sliderPagers).on('click', function() {
-    if ( !$(this).hasClass('active') ) {
+    if (!$(this).hasClass('active')) {
         sliderTarget = $(this).index();
         sliderResponse(sliderTarget);
         resetTiming();
@@ -36,14 +36,14 @@ $(sliderPagers).on('click', function() {
 // next/prev controls
 $(sliderControlNext).on('click', function() {
     sliderTarget = $(sliderPagersActive).index();
-    sliderTarget === lastElem ? sliderTarget = 0 : sliderTarget = sliderTarget+1;
+    sliderTarget === lastElem ? sliderTarget = 0 : sliderTarget = sliderTarget + 1;
     sliderResponse(sliderTarget);
     resetTiming();
 });
 $(sliderControlPrev).on('click', function() {
     sliderTarget = $(sliderPagersActive).index();
-    lastElem = $(sliderPagers).length-1;
-    sliderTarget === 0 ? sliderTarget = lastElem : sliderTarget = sliderTarget-1;
+    lastElem = $(sliderPagers).length - 1;
+    sliderTarget === 0 ? sliderTarget = lastElem : sliderTarget = sliderTarget - 1;
     sliderResponse(sliderTarget);
     resetTiming();
 });
