@@ -46,7 +46,6 @@ function changetheme() {
     if (theme == 0) {
         for (var i = 0; i < modalthemewindow.length; i++) {
             modalthemewindow[i].classList.add("modalblack");
-            $('.modal-overlay').css('opacity', opc);
             modalthemewindow[i].classList.remove("modalwhite");
             modalthemewindow[i].classList.remove("modalyellow");
         }
@@ -54,7 +53,6 @@ function changetheme() {
     } else if (theme == 1) {
         for (var x = 0; x < modalthemewindow.length; x++) {
             modalthemewindow[x].classList.add("modalyellow");
-            $('.modal-overlay').css('opacity', opc);
             modalthemewindow[x].classList.remove("modalblack");
             modalthemewindow[x].classList.remove("modalwhite");
         }
@@ -62,7 +60,6 @@ function changetheme() {
     } else if (theme == 2) {
         for (var z = 0; z < modalthemewindow.length; z++) {
             modalthemewindow[z].classList.add("modalwhite");
-            $('.modal-overlay').css('opacity', opc);
             modalthemewindow[z].classList.remove("modalblack");
             modalthemewindow[z].classList.remove("modalyellow");
         }
@@ -86,15 +83,15 @@ function changeopacity() {
 function changefontsize() {
     if (fontsize == 12) {
         $('.mainapptext').css('font-size', '18px');
-        $('.modal-overlay').css('opacity', opc);
         fontsize = 18;
     } else if (fontsize == 18) {
         $('.mainapptext').css('font-size', '24px');
-        $('.modal-overlay').css('opacity', opc);
         fontsize = 24;
     } else if (fontsize == 24) {
         $('.mainapptext').css('font-size', '12px');
-        $('.modal-overlay').css('opacity', opc);
         fontsize = 12;
     }
+}
+function OpacityReset(){
+	opc=0.5;
 }
