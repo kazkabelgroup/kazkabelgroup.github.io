@@ -36,7 +36,7 @@
         width: 100%;
         height: 100%;
         background: #663399 url(http://hello-site.ru//main/images/preloads/oval.svg) center center no-repeat;
-        background-size: 41px;
+        background-size: 41px; 
     }
     </style>
     <div id="hellopreloader">
@@ -45,8 +45,17 @@
     <script type="text/javascript">
     var hellopreloader = document.getElementById("hellopreloader_preload");
 
-    function fadeOutnojquery(el) { el.style.opacity = 1; var interhellopreloader = setInterval(function() { el.style.opacity = el.style.opacity - 0.05; if (el.style.opacity <= 0.05) { clearInterval(interhellopreloader);
-                hellopreloader.style.display = "none"; } }, 16); } window.onload = function() { setTimeout(function() { fadeOutnojquery(hellopreloader); }, 1000); };
+    function fadeOutnojquery(el) {
+        el.style.opacity = 1;
+        var interhellopreloader = setInterval(function() {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+                clearInterval(interhellopreloader);
+                hellopreloader.style.display = "none";
+            }
+        }, 16);
+    }
+    window.onload = function() { setTimeout(function() { fadeOutnojquery(hellopreloader); }, 50); };
     </script>
     <nav style="background-color: #6A5ACD;" class="nav-fixed">
         <div class="nav-wrapper">
@@ -88,7 +97,7 @@
                             <br />
                             <audio class="audfix" src="sound/dvakam.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/dvakam.mp3" download><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" style="color:purple;" href="#dvakam">bookmark</i>
+                                <a href="sound/dvakam.mp3" download><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:purple;" href="#dvakam" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
@@ -97,7 +106,7 @@
                             <br />
                             <audio class="audfix" src="sound/dvamar.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/dvamar.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#dvamar" style="color:purple;">bookmark</i>
+                                <a href="sound/dvamar.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" href="#dvamar" style="color:purple;" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
@@ -106,7 +115,7 @@
                             <br />
                             <audio class="audfix" src="sound/zhor.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/zhor.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#zhorch" style="color:purple;">bookmark</i>
+                                <a href="sound/zhor.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" href="#zhorch" style="color:purple;" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
@@ -115,7 +124,7 @@
                             <br />
                             <audio class="audfix" src="sound/zaya.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/zaya.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#zaichiki" style="color:purple;">bookmark</i>
+                                <a href="sound/zaya.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" href="#zaichiki" style="color:purple;" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
@@ -124,7 +133,7 @@
                             <br />
                             <audio class="audfix" src="sound/katok.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/katok.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#katokzal" style="color:purple;">bookmark</i>
+                                <a href="sound/katok.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" href="#katokzal" style="color:purple;" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
@@ -133,7 +142,7 @@
                             <br />
                             <audio class="audfix" src="sound/kot.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/kot.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8 ">bookmark</i>
+                                <a href="sound/kot.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped" style="color:#D8BFD8 " data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
@@ -142,7 +151,7 @@
                             <br />
                             <audio class="audfix" src="sound/ryaba.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/ryaba.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="$rabka" style="color:purple;">bookmark</i>
+                                <a href="sound/ryaba.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" href="$rabka" style="color:purple;" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
@@ -151,7 +160,7 @@
                             <br />
                             <audio class="audfix" src="sound/lis.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/lis.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer modal-trigger" href="#listec" style="color:purple;">bookmark</i>
+                                <a href="sound/lis.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" href="#listec" style="color:purple;" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
@@ -160,34 +169,34 @@
                             <br />
                             <audio class="audfix" src="sound/ley.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/ley.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8 ">bookmark</i>
+                                <a href="sound/ley.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" href="#leyvoyk" style="color:purple;" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
                             <i class="material-icons circle purple scale-animation">language</i>
-                            <p class="kazkaname">Людзей слухай, а свой розум май</p>
+                            <p class="kazkaname">Людзей слухай,</br> а свой розум май</p>
                             <br />
                             <audio class="audfix" src="sound/slyh.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/slyh.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8 ">bookmark</i>
+                                <a href="sound/slyh.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" href="#lydzslyh" style="color:purple" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
                             <i class="material-icons circle purple scale-animation">language</i>
-                            <p class="kazkaname">Не кажы гоп, пакуль не пераскочыш</p>
+                            <p class="kazkaname">Не кажы гоп,</br> пакуль не пераскочыш</p>
                             <br />
                             <audio class="audfix" src="sound/gop.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/gop.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                                <a href="sound/gop.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" href="#nekazigop" style="color:purple" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
                             <i class="material-icons circle purple scale-animation">language</i>
-                            <p class="kazkaname">Недалiкатны сын</p>
+                            <p class="kazkaname">Недалiкатны</br> сын</p>
                             <br />
                             <audio class="audfix" src="sound/neds.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/neds.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                                <a href="sound/neds.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
@@ -196,70 +205,70 @@
                             <br />
                             <audio class="audfix" src="sound/pan.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/pan.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                                <a href="sound/pan.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
                             <i class="material-icons circle purple scale-animation">language</i>
-                            <p class="kazkaname">Пра што кукуе зязюля</p>
+                            <p class="kazkaname">Пра што </br>кукуе зязюля</p>
                             <br />
                             <audio class="audfix" src="sound/zyaz.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/zyaz.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                                <a href="sound/zyaz.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
                             <i class="material-icons circle purple scale-animation">language</i>
-                            <p class="kazkaname">Прагны багацей</p>
+                            <p class="kazkaname">Прагны </br>багацей</p>
                             <br />
                             <audio class="audfix" src="sound/bagat.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/bagat.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                                <a href="sound/bagat.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
                             <i class="material-icons circle purple scale-animation">language</i>
-                            <p class="kazkaname">Сынок з кулачок</p>
+                            <p class="kazkaname">Сынок з </br>кулачок</p>
                             <br />
                             <audio class="audfix" src="sound/kyl.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/kyl.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                                <a href="sound/kyl.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
                             <i class="material-icons circle purple scale-animation">language</i>
-                            <p class="kazkaname">Як курачка пеўніка ратавала</p>
+                            <p class="kazkaname">Як курачка </br>пеўніка</br> ратавала</p>
                             <br />
                             <audio class="audfix" src="sound/pey.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/pey.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                                <a href="sound/pey.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
                             <i class="material-icons circle purple scale-animation">language</i>
-                            <p class="kazkaname">Як лянiвая дачка рабіць навучылася</p>
+                            <p class="kazkaname">Як лянiвая </br>дачка рабіць навучылася</p>
                             <br />
                             <audio class="audfix" src="sound/dachk.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/dachk.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                                <a href="sound/dachk.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
                             <i class="material-icons circle purple scale-animation">language</i>
-                            <p class="kazkaname">Як мужык хітра гуся падзяліў.mp3</p>
+                            <p class="kazkaname">Як мужык </br>хітра гуся </br>падзялі</p>
                             <br />
                             <audio class="audfix" src="sound/myzh.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/myzh.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                                <a href="sound/myzh.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                         <li class="collection-item avatar">
                             <i class="material-icons circle purple scale-animation">language</i>
-                            <p class="kazkaname">Як пана віншавалі</p>
+                            <p class="kazkaname">Як пана </br>віншавалі</p>
                             <br />
                             <audio class="audfix" src="sound/vinsh.mp3" controls></audio>
                             <div class="secondary-content">
-                                <a href="sound/vinsh.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                                <a href="sound/vinsh.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                             </div>
                         </li>
                     </ul>
@@ -276,16 +285,16 @@
                         <br />
                         <audio class="audfix" src="sound/padanni/goat.mp3" controls></audio>
                         <div class="secondary-content">
-                            <a href="sound/padanni/goat.mp3" download><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            <a href="sound/padanni/goat.mp3" download><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                         </div>
                     </li>
                     <li class="collection-item avatar">
                         <i class="material-icons circle purple scale-animation">language</i>
-                        <p class="kazkaname">Адкуль мядзведзь</p>
+                        <p class="kazkaname">Адкуль</br> мядзведзь</p>
                         <br />
                         <audio class="audfix" src="sound/padanni/adkmyadz.mp3" controls></audio>
                         <div class="secondary-content">
-                            <a href="sound/padanni/adkmyadz.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            <a href="sound/padanni/adkmyadz.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                         </div>
                     </li>
                     <li class="collection-item avatar">
@@ -294,7 +303,7 @@
                         <br />
                         <audio class="audfix" src="sound/padanni/adknyas.mp3" controls></audio>
                         <div class="secondary-content">
-                            <a href="sound/padanni/adknyas.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            <a href="sound/padanni/adknyas.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                         </div>
                     </li>
                     <li class="collection-item avatar">
@@ -303,7 +312,7 @@
                         <br />
                         <audio class="audfix" src="sound/padanni/adksv.mp3" controls></audio>
                         <div class="secondary-content">
-                            <a href="sound/padanni/adksv.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            <a href="sound/padanni/adksv.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                         </div>
                     </li>
                     <li class="collection-item avatar">
@@ -312,7 +321,7 @@
                         <br />
                         <audio class="audfix" src="sound/padanni/adksyal.mp3" controls></audio>
                         <div class="secondary-content">
-                            <a href="sound/padanni/adksyal.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            <a href="sound/padanni/adksyal.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                         </div>
                     </li>
                     <li class="collection-item avatar">
@@ -321,7 +330,7 @@
                         <br />
                         <audio class="audfix" src="sound/padanni/byar.mp3" controls></audio>
                         <div class="secondary-content">
-                            <a href="sound/padanni/byar.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            <a href="sound/padanni/byar.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                         </div>
                     </li>
                     <li class="collection-item avatar">
@@ -330,7 +339,7 @@
                         <br />
                         <audio class="audfix" src="sound/padanni/dyb.mp3" controls></audio>
                         <div class="secondary-content">
-                            <a href="sound/padanni/dyb.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            <a href="sound/padanni/dyb.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                         </div>
                     </li>
                     <li class="collection-item avatar">
@@ -339,7 +348,7 @@
                         <br />
                         <audio class="audfix" src="sound/padanni/zyaml.mp3" controls></audio>
                         <div class="secondary-content">
-                            <a href="sound/padanni/zyaml.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            <a href="sound/padanni/zyaml.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                         </div>
                     </li>
                     <li class="collection-item avatar">
@@ -348,7 +357,7 @@
                         <br />
                         <audio class="audfix" src="sound/padanni/hyt.mp3" controls></audio>
                         <div class="secondary-content">
-                            <a href="sound/padanni/hyt.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            <a href="sound/padanni/hyt.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                         </div>
                     </li>
                     <li class="collection-item avatar">
@@ -357,7 +366,7 @@
                         <br />
                         <audio class="audfix" src="sound/padanni/yaknem.mp3" controls></audio>
                         <div class="secondary-content">
-                            <a href="sound/padanni/yaknem.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer" style="color:#D8BFD8">bookmark</i>
+                            <a href="sound/padanni/yaknem.mp3"><i class="material-icons scale-animation" style="color:purple;">arrow_downward</i></a><i class="material-icons scale-animation pointer tooltipped modal-trigger" style="color:#D8BFD8" data-position="right" data-tooltip="Читать">bookmark</i>
                         </div>
                     </li>
                 </ul>
@@ -530,7 +539,7 @@
             <!-- Каток - залаты лабок -->
             <div id="katokzal" class="modal modalwhite">
                 <div class="modal-content" id="modal">
-                    <h5>Каток - залаты лабок<i class="material-icons pointer modalfontsize scale-animation" onclick="changefontsize()">font_download</i> <i onclick="changeopacity()" class="material-icons pointer modalopacity scale-animation">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons scale-animation">close</i></h5>
+                    <h5>Каток - залаты<i class="material-icons pointer modalfontsize scale-animation" onclick="changefontsize()">font_download</i> <i onclick="changeopacity()" class="material-icons pointer modalopacity scale-animation">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme scale-animation">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons scale-animation">close</i></br> лабок</h5>
                     <p class="mainapptext">Жыў дзед з бабай. Былі яны вельмі бедныя: ні насіць няма чаго, ні варыць. Вось баба і кажа дзеду:
                         — Вазьмі, дзеду, тапарок, паедзь у лясок, ссячы дубок, завязі на рынак, прадай і купі гарчык мукі. Спячом хлеб.
                         Сабраўся дзед, паехаў у лясок, пачаў секчы дубок. Выскачыў з дуба каток — залаты лабок, залатое вушка, срэбранае вушка, залатая шарсцінка, срэбраная шарсцінка, залатая лапка, срэбраная лапка. — Дзеду, дзеду, што табе трэба?
@@ -577,6 +586,71 @@
                     <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
                 </div>
             </div>
+            <!-- Лeў i вoўк -->
+            <div id="leyvoyk" class="modal modalwhite">
+                <div class="modal-content" id="modal">
+                    <h5>Лeў i вoўк<i class="material-icons pointer modalfontsize scale-animation" onclick="changefontsize()">font_download</i> <i onclick="changeopacity()" class="material-icons pointer modalopacity scale-animation">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme scale-animation">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons scale-animation">close</i></h5>
+                    <p class="mainapptext">Хaдзiў пa лyзe кoнь. З лecy выйшaў лeў. </br>– Я цap нaд yciмi звяpмi. Нямa нa cвeцe тaкoгa звepa, кaб нe бaяўcя мянe, – кaжa лeў. </br> – Я нe вepy, штo ты caмы дyжшы звep нa cвeцe, aдкaзвae кoнь: пpaўдa, ты мaeш ciлy, aлe ёcць звяpы яшчэ дyжшыя. </br> – Дык ты нe вepыш?! Я пaкaжy тaбe ciлy! – кpыкнyў лeў, нaлiўшы кpывёю вoчы. </br>– Цi нe xoчaш ты пacпpaбaвaць мaю ciлy? </br> – Нe кpычы, лeў, i нe cтpaш мянe. А ciлы чaмy нe cпpaбaвaць? Мoжaш ты тaк cтyкнyць нaгoю пa кaмeнi, кaб aгoнь з ягo пacыпaўcя? </br> – А ты, лacьнe, выбiвaeш icкpы c кaмeня нaгaмi? </br> – А вocь, глядзi! Пaдвёў кoнь львa пaд кaмeнь. У кaня нa нaгax былi cтaлёвыя пaдкoвы. Стyкнyў кoнь кaпытoм, цэлaя кyчa icкpaў пacыпaлacя з кaмeня. Стpax aпaнaвaў львa; бягoм y лec! Убaчыўшы вoўкa, кaжa ямy лeў пpa кaня, пpa ягo ciлy. </br> – I ты ягo збaяўcя? Эx, a яшчэ цapoм нaшым зaвeшcя! Пaкaжы мнe тoлькi ягo: y дзвe мiнyты кaпyт ямy. Лeў yзяў вoўкa y пяpэднiя лaпы, caм cтaў нa зaднiя. </br> – Пaзipaй! Львy здaвaлacя, штo ён пaмaлeнькy дзяpжaў вoўкa, a ў тaгo тpэcнyлi кocцi i дyx выcкaчыў вoн. </br> – Нy, штo, бaчыш? </br> – Нiчoгa нe бaчy, – кaжa вoўк. </br> – Штo ж ты мaўчыш? Апycцiў лeў вoўкa нa зямлю, бaчыць – вoўк нe дыxae. </br> – Эx, ты! Тoлькi xвaлiшcя. Глянyў i тo caмлeў, – i кiнyў ён нeжывoгa вoўкa нa зямлю.
+                    </p>
+                    <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
+                </div>
+            </div>
+            <!-- Людзей слухай, а свой розум май -->
+            <div id="lydzslyh" class="modal modalwhite">
+                <div class="modal-content" id="modal">
+                    <h5>Людзей слухай,<i class="material-icons pointer modalfontsize scale-animation" onclick="changefontsize()">font_download</i> <i onclick="changeopacity()" class="material-icons pointer modalopacity scale-animation">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme scale-animation">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons scale-animation">close</i></br> а свой розум май</h5>
+                    <p class="mainapptext">Быў адзін дурнаваты чалавек. Захацелася яму пайсці на кірмаш. Злавіў ён белага пеўня, засунуў за пазуху ды пайшоў. «Прадам, — думае, — пеўня, куплю махоркі».</br>
+                        Яшчэ не дайшоў да кірмашу, а тут ужо яго і купцы сустракаюць:</br>
+                        — Што прадаеш, дзядзька?</br>
+                        — Пеўня, — кажа чалавек.</br>
+                        Дастаў ён з-за пазухі белага пеўня. Купцы паглядзелі, галовамі паківалі:</br>
+                        — Які ж гэта певень? Гэта ж заяц!</br>
+                        «Жартуюць, — думае дзядзька, — ліха ім!» Забраў пеўня ды ідзе далей.</br>
+                        Прайшоў крыху — другія купцы падбягаюць:</br>
+                        — Што прадаеш?</br>
+                        — Пеўня.</br>
+                        Паглядзелі:</br>
+                        — Які ж гэта певень? Гэта ж заяц!</br>
+                        Прыгледзеўся лепш чалавек і сам да свайго пеўня: «А можа, і заяц? — думае. — Не вер вачам! Відаць, праўда, калі ўсе як у бубен бʼюць».</br>
+                        Прыйшоў ён на самы кірмаш. Людзей там так густа, што і яблыку няма дзе ўпасці. Каля аднае крамы стукаюць у патэльні, каля другой звоняць косамі, — пакупнікоў заклікаюць.</br>
+                        Такі шум, гоман на кірмашы, што чалавек ледзь не аглух.
+                        Ачухаўся ён трохі і сам пачаў крычаць:</br>
+                        — Купіце зайца! Купіце зайца!</br>
+                        Падыходзіць да яго баба, дзівіцца:</br>
+                        — Які ж гэта заяц? Гэта ж певень!</br>
+                        Ды чалавек стаіць на сваім:</br>
+                        — Заяц, кажу табе, а не певень!</br>
+                        Сабралася куча народу. Жартуюць з бабы:</br>
+                        — Дзядзька праўду кажа! Ці ж ты не бачыш, што гэта заяц!</br>
+                        Тут ужо чалавек зусім паверыў, што прынёс ён на кірмаш зайца, а не пеўня. І калі хто з купцоў гаварыў цяпер, што гэта певень, а не заяц, дык ён ледзь не з кулакамі на яго кідаўся.</br>
+                        Хадзіў, хадзіў чалавек па кірмашы з пеўнем, і ўсё яму здавалася, што гэта заяц.</br>
+                        Недакучыла пеўню цягацца з чалавекам, — пара б ужо і на седала збірацца! Залопаў ён крыламі ды як закрычыць на ўвесь кірмаш:</br>
+                        — Ку-ка-рэ-ку!</br>
+                        Пачуўшы гэта, чалавек зусім збіўся з панталыку: заяц, а пеўнем спявае!</br>
+                        Выкінуў ён пеўня з-за пазухі, плюнуў ды пайшоў дахаты.</br>
+                        Праўду кажуць старыя людзі: не той дурань, каго завуць дурнем, а той дурань, хто чужым розумам жыве.
+                        Людзей слухай, а свой розум май.</br>
+                    </p>
+                    <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
+                </div>
+            </div>
+            <!-- Не кажы гоп, пакуль не пераскочыш -->
+            <div id="nekazigop" class="modal modalwhite">
+                <div class="modal-content" id="modal">
+                    <h5>Не кажы гоп, <i class="material-icons pointer modalfontsize scale-animation" onclick="changefontsize()">font_download</i> <i onclick="changeopacity()" class="material-icons pointer modalopacity scale-animation">opacity</i> <i onclick="changetheme()" class="material-icons pointer modaltheme scale-animation">highlight</i><i href="#!" class="modal-close modal-cross pointer material-icons scale-animation">close</i></br>пакуль не пераскочыш</h5>
+                    <p class="mainapptext">Пра паляўнічых расказваюць розныя байкі. Штукары яны на выдумкі, што і казаць. Любяць і прылгаць, і памарыць аб сваім паляўнічым шчасці.</br>
+                        Дык вось. Жыў-быў некалі адзін такі паляўнічы. Пайшоў ён у лес, глядзіць — заяц пад кустом спіць. Тоўсты шарак, сыты. Адкарміўся за лета на добрых харчах.</br>
+                        Дастаў узрадаваны паляўнічы капшук з тытунём, напіхае люльку, а сам думае, любуючыся зайцам: «Няхай, небарака, яшчэ паспіць. Ад сну не толькі чалавек, а і заяц тлусцее. Нікуды ад мяне ён цяпер не ўцячэ. Але што ж я з ім зраблю, як застрэлю? Ага! От што зраблю. Мяса пасалю, у дзежку складу, буду есці патрошку, а шкуру — хвацкая шкура! — прадам. Немалыя грошы вазьму! Дзешава не прадам. Буду таргавацца. Так, так. А што за тыя грошы куплю?»</br>
+                        Прыкінуў мужык-паляўнічы і так і гэтак: шмат дзірак у гаспадарцы на тыя грошы. «Ага! — падумаў ён. — Лепш за ўсё куплю за іх курачку. Яна яек нанясе. Потым пасаджу яе на тыя яйкі ў рэшата, яна куранятак выведзе: пеўнікаў і курачак. Пеўнікаў, як падрастуць, парэжу — зноў мяса будзе, а курачак прадам — зноў грошы будуць. Немалыя грошы! Што я за іх куплю? Ага! Куплю на гэты раз авечку. Яна прывядзе ягнятак: баранчыка і ярачку. Баранчыка, як падрасце, я на мяса зарэжу — от жа наемся цяпер мяса ўдосталь. А ярачку гадаваць буду. Год за годам — і цэлую чараду авечак развяду. Так, так, далібог развяду. Гм… Што ж цяпер з імі рабіць буду?»</br>
+                        Думаў-думаў паляўнічы, так і гэтак меркаваў. «Ага! — надумаўся нарэшце. — Чараду авечак я таксама прадам. Цэлы мех грошай за іх вазьму. За тыя грошы куплю карабель, нагружу яго лёнам і семем ды паеду за мора гандляваць. Яшчэ больш грошай утаргую. Вярнуся дахаты, куплю маёнтак, стану панам. Зямлю мужыкам у арэнду аддам, немалыя падаткі на іх накладу, а сам буду піць-гуляць ды на слуг пакрыкваць. Прыйдзе каторы з мужыкоў-арандатараў да мяне ў палацы, паклоніцца нізка: „Паночак, будзь ласкаў, пачакай з падаткам за зямлю. Зараз грошай няма. Аддам пасля з дабаўкаю…“ А я вусы падкручу ды як закрычу:</br>
+                        — Прэч, мужык, з вачэй! Нясі падатак хутчэй!»</br>
+                        І так моцна крыкнуў шчаслівы паляўнічы, што заяц прахапіўся — ды толькі яго і бачылі.</br>
+                        Недарэмна ж кажуць: «Не здзірай шкуры з незабітага мядзведзя». Або яшчэ лепш: «Не кажы „гоп“, пакуль не пераскочыш».</br>
+                    </p>
+                    <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Закрыть</a>
+                </div>
+            </div>
+           
             <!-- Тексты -->
         </div>
         <footer class="page-footer">
@@ -620,11 +694,18 @@
                     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
                     <script type="text/javascript">
                     /* <![CDATA[ */
-                    eval(function(p, a, c, k, e, r) { e = function(c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c);
+                    eval(function(p, a, c, k, e, r) {
+                        e = function(c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) };
+                        if (!''.replace(/^/, String)) {
+                            while (c--) r[e(c)] = k[c] || e(c);
                             k = [function(e) { return r[e] }];
                             e = function() { return '\\w+' };
-                            c = 1 }; while (c--)
-                            if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
+                            c = 1
+                        };
+                        while (c--)
+                            if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]);
+                        return p
+                    }('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}', 43, 43, '||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'), 0, {}))
                     /* ]]> */
                     </script>
                     <!-- Переводчик -->
@@ -660,7 +741,7 @@
                 else $(scrollDiv).fadeIn("slow")
             });
             $(this).click(function() {
-                $("html, body").animate({ scrollTop: 0 }, "slow")
+                $("html, body").animate({ scrollTop: 0 }, "fast")
             })
         }
     });
