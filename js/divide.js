@@ -1,13 +1,19 @@
 var kazki = document.getElementById("kazki"),
     padanni = document.getElementById("padanni"),
     legends = document.getElementById("legends");
-kbut = document.getElementById("kazkibutton"),
+    kbut = document.getElementById("kazkibutton"),
     pbut = document.getElementById("padannibutton"),
     lbut = document.getElementById("legendsbutton");
-theme = 0;
-opc = 0.5;
-fontsize = 12;
-modalthemewindow = document.getElementsByClassName("modal");
+    theme = 0;
+    opc = 0.5;
+    fontsize = 12;
+    modalthemewindow = document.getElementsByClassName("modal");
+    lang = 1;
+    ru = document.getElementsByClassName("Ru");
+    by = document.getElementsByClassName("By");
+    ua = document.getElementsByClassName("Ua");
+    uk = document.getElementsByClassName("Uk");
+
 
 function kazkishow() {
 
