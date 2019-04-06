@@ -7,16 +7,14 @@
                                          
 */
 body {
-    background-color: #6A5ACD;
+  background-image: linear-gradient(to bottom, #6a5acd, #5445a6, #3e3280, #291f5c, #150e3b);
+  background-repeat: no-repeat;
     color: #FFFFFF;
     font-size: 20px;
     padding-top: 100px;
+    background-size: 150% 300%;
     font-family: "Century Gothic", Arial, sans-serif;
     position: relative;
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 2s;
     
@@ -25,7 +23,6 @@ body {
     user-select: none;
     font-family: "Century Gothic";
 }
-
 html,
 body {
     scroll-behavior: smooth;
@@ -46,10 +43,11 @@ body {
 
 .footer-copyright {
     font-family: "timeburnernormal";
+      top:10px;
+  position: relative;
 
 
 }
-
 .invisible {
     visibility: hidden;
     opacity: 0;
@@ -570,7 +568,9 @@ footer {
 }
 
 .page-footer {
-    background-color: #6A5ACD;
+    background-color: #150E3B;
+  background-repeat: no-repeat;
+  background-size: 100% 300%;
 }
 
 .indexlaptop {
@@ -691,7 +691,4 @@ footer {
 }
 .card-panel a{
     color:#6A5ACD;
-}
-.translator{
-  
 }
