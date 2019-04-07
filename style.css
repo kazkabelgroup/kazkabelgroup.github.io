@@ -12,7 +12,7 @@ body {
     color: #FFFFFF;
     font-size: 20px;
     padding-top: 100px;
-    background-size: 150% 300%;
+    background-size: 150% 500%;
     font-family: "Century Gothic", Arial, sans-serif;
     position: relative;
     -webkit-animation-name: animatebottom;
@@ -213,9 +213,11 @@ a {
 }
 
 @media screen and (min-width:976px) {
+    .collapsible{
+      width: 95%;
+    }
     nav {
         width: 100%;
-        font-size: 40px;
         // set animation
         -webkit-transition: all 0.4s ease;
         transition: all 0.4s ease;
@@ -249,6 +251,8 @@ a {
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
+        width: 3%;
+        height: 7%;
     }
 
     .btn-animation:hover {
@@ -691,4 +695,16 @@ footer {
 }
 .card-panel a{
     color:#6A5ACD;
+}
+@media screen and (min-width: 1367px){
+  html, body{
+    font-size: 1.3rem;
+    }
+}
+footer{
+  text-align: center;
+}
+#go-top-icon{
+  position: relative;
+  top:23%;
 }
